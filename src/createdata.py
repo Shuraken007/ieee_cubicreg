@@ -5,8 +5,10 @@ def Cond_matrix(Z):
     T = None
     B = None
     if gotlist:
-        T = Z[2]
-        B = Z[1]
+        if len(Z) >= 3:
+            T = Z[2]
+        if len(Z) >= 2:
+            B = Z[1]
         Z = Z[0]
     N = Z.shape[1]
     Y = np.zeros(Z.shape, dtype=np.complex)
@@ -15,7 +17,7 @@ def Cond_matrix(Z):
           if i != j:
              if Z[i, j] != 0:
                 Y[i, j] = -1/Z[i, j]
-             if gotlist and ((not (T is None)) and T[i, j] != 0 or T[j, i] != 0):
+             if gotlist and ((not (T is None)) and (T[i, j] != 0 or T[j, i] != 0)):
                  a = max(T[i, j], T[j, i])
                  Y[i, j] = Y[i, j] / a
     for i in range(0, N):
@@ -27,7 +29,7 @@ def Cond_matrix(Z):
                     Y[i, i] = Y[i, i] + 1/(2*B[i, j])
                  if (not (T is None)) and T[i, j] != 0:
                     Y[i, i] = Y[i, i] + Y[i, j] - Y[i, j]/T[i, j]
-    print(Y)
+    # print(Y)
     return Y
 
 def generate_cubic_system(S, Z, num_node, ballance_node, U_0):

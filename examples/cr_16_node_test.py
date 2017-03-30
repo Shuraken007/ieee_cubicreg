@@ -9,10 +9,7 @@ import src.easy_print as ep
 import time
 
 if __name__ == '__main__':
-    # Choose a function to run it on, and a method to use (original cubic reg or adaptive cubic reg)
-    # Function choices: 'bimodal', 'simple', 'quadratic'
-    # Method choices: 'adaptive', 'original'
-    # If you choose method='adaptive', you can choose hessian updates from 'broyden', 'rank_one', and 'exact'.
+
     num_node = 16
     ballance_node = 16
     name_node = np.array([40, 42, 73, 136, 186, 187, 206, 207, 209, 212, 214, 220, 222, 228, 397, 700])
@@ -20,7 +17,7 @@ if __name__ == '__main__':
     node_to = np.array([207, 212, 206, 40, 42, 220, 228, 700, 187, 207, 207, 212, 222, 136, 187, 73])
     r = np.array([7.74, 2.2, 2.4, 0.6, 0.6, 6.2, 0.8, 4.12, 2.2, 1.2, 0.4, 3.5, 3.6, 7.8, 1.9, 0.3])
     x = np.array([38.41, 13.2, 12.6, 3.1, 3.1, 31.6, 4.7, 23.14, 11.6, 6.2, 2.4, 17, 19.3, 31.2, 10, 1.9])
-    b = np.array([-262.99999, - 99, - 83, - 21, - 21, - 210, - 31, - 152.4, - 78, - 40, - 16, - 111, - 130.99999, - 204, - 69, - 13])
+    b = np.array([-262.99999, - 99, - 83, - 21, - 21, - 210, - 31, - 152.4, - 78, - 40, - 16, - 111, - 130.99999, - 204, - 69, - 13])*10**(-6)
     Z = np.zeros((16, 16), dtype = 'complex');
     B = np.zeros((16, 16), dtype='complex');
     for i in range(0, num_node):
@@ -39,13 +36,13 @@ if __name__ == '__main__':
          -3.81818, -0.16991, -3.15909, 14.52273])
     #S = np.ones((1, 15))
     U_0 = 226.04613
-    Z = [Z, B]
+    # Z = [Z, B]
     u = np.ones((1, num_node-1))*(220)
     v = np.ones((1, num_node - 1)) * 0
     x0 = np.concatenate((u, v)).ravel()
 
     steptype = 'first'
-    m_file = 'cr_16_node_test_0.01_+S_' + steptype + '.txt'
+    m_file = '..\\result\\' + 'cr_16_node_test_0.01_+S_' + steptype + '.txt'
 
     easy = ep.easy_print()
     easy.add_phase('iter', 'grad', 'value', 'M', 'e_min', 'time', 'vector',

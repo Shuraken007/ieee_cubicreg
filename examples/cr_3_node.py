@@ -9,10 +9,6 @@ import src.easy_print as ep
 import time
 
 if __name__ == '__main__':
-    # Choose a function to run it on, and a method to use (original cubic reg or adaptive cubic reg)
-    # Function choices: 'bimodal', 'simple', 'quadratic'
-    # Method choices: 'adaptive', 'original'
-    # If you choose method='adaptive', you can choose hessian updates from 'broyden', 'rank_one', and 'exact'.
     num_node = 3
     ballance_node = 1
     Z = np.array([
@@ -35,7 +31,7 @@ if __name__ == '__main__':
     cr = src.cubic_reg.CubicRegularization(x0, f, grad, hess, conv_tol=1e-10)
 
 steptype = 'first'
-m_file = 'cr_3_node_None' + steptype + '.txt'
+m_file = '..\\result\\' + 'cr_3_node_None' + steptype + '.txt'
 
 easy = ep.easy_print()
 easy.add_phase('iter', 'grad', 'value', 'M', 'e_min', 'time', 'vector',
