@@ -1,0 +1,544 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "examples/cr_16_node_test.py",
+			"settings":
+			{
+				"buffer_size": 5863,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "src/createdata.py",
+			"settings":
+			{
+				"buffer_size": 5550,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "examples/cr_14_node_polar.py",
+			"settings":
+			{
+				"buffer_size": 5965,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		}
+	],
+	"build_system": "Packages/Python/Python.sublime-build",
+	"build_system_choices":
+	[
+		[
+			[
+				[
+					"Packages/Python/Python.sublime-build",
+					""
+				],
+				[
+					"Packages/Python/Python.sublime-build",
+					"Syntax Check"
+				]
+			],
+			[
+				"Packages/Python/Python.sublime-build",
+				""
+			]
+		]
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 357.0,
+		"last_filter": "sync",
+		"selected_items":
+		[
+			[
+				"sync",
+				"Sync Settings: Upload"
+			],
+			[
+				"prefences: linter",
+				"Preferences: SublimeLinter Settings – User"
+			],
+			[
+				"pre",
+				"Preferences: SublimeLinter Settings – User"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"remove",
+				"Package Control: Remove Package"
+			],
+			[
+				"prefs",
+				"Preferences: SublimeLinter Settings – User"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"remo",
+				"Package Control: Remove Package"
+			],
+			[
+				"remove ",
+				"Package Control: Remove Package"
+			],
+			[
+				"read",
+				"ReadmePlease"
+			],
+			[
+				"re",
+				"ReadmePlease"
+			],
+			[
+				"ins",
+				"Package Control: Install Package"
+			],
+			[
+				"in",
+				"Package Control: Install Package"
+			],
+			[
+				"con",
+				"Conda: Activate Environment"
+			],
+			[
+				"rea",
+				"ReadmePlease"
+			],
+			[
+				"gitg",
+				"GitGutter: Support Info"
+			],
+			[
+				"git: push",
+				"git: push"
+			],
+			[
+				"git:",
+				"git: commit"
+			],
+			[
+				"git: help",
+				"GitSavvy: help"
+			],
+			[
+				"create",
+				"Sync Settings: Create and Upload"
+			],
+			[
+				"box",
+				"Boxy Theme: Configuration"
+			],
+			[
+				"delete",
+				"File: Delete"
+			],
+			[
+				"brow",
+				"File: Open In Browser - Testing Server"
+			],
+			[
+				"boxy",
+				"Boxy Theme: Configuration"
+			],
+			[
+				"task: ",
+				"Tasks: New document"
+			],
+			[
+				"install ",
+				"Package Control: Install Package"
+			],
+			[
+				"rem",
+				"Package Control: Remove Package"
+			]
+		],
+		"width": 398.0
+	},
+	"console":
+	{
+		"height": 200.0,
+		"history":
+		[
+			"import socket; socket.socket(socket.AF_INET, socket.SOCK_STREAM).connect((\"localhost\", 56967))",
+			"cp ~/Library/Application\\ Support/Sublime\\ Text\\ 2/Packages/PlainTasks/icons/TODO.icns /Applications/Sublime\\ Text\\ 2.app/Contents/Resources/"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/D/Development/Projects/ieee_cubicreg",
+		"/D/Development/Projects/ieee_cubicreg/examples",
+		"/D/Development/Projects/ieee_cubicreg/src",
+		"/D/Development/Projects/ieee_cubicreg/test",
+		"/D/Development/Projects/ieee_cubicreg/test/__pycache__"
+	],
+	"file_history":
+	[
+		"/D/Development/Projects/ieee_cubicreg/src/cubic_reg.py",
+		"/D/SaveHdd/Desktop/ToDo/ToDo",
+		"/D/SaveHdd/Desktop/ToDo/HotKeys.todo",
+		"/D/Development/Projects/ieee_cubicreg/examples/cr_16_node.py",
+		"/C/Users/Dark Lord/AppData/Roaming/Sublime Text 3/Packages/User/Python3 - Anaconda.sublime-build",
+		"/D/Development/Projects/Sublime-proj/ieee_cubicreg.sublime-project",
+		"/D/Development/Projects/ieee_cubicreg/test/import test.py",
+		"/D/Development/Projects/ieee_cubicreg/test/test.py",
+		"/D/Development/Projects/ieee_cubicreg/src/__init__.py",
+		"/C/Users/Dark Lord/AppData/Roaming/Sublime Text 3/Packages/User/SublimeLinter.sublime-settings",
+		"/D/Development/Projects/ieee_cubicreg/src/easy_print.py",
+		"/D/Development/Projects/ieee_cubicreg/src/createdata.py",
+		"/C/Users/Dark Lord/AppData/Roaming/Sublime Text 3/Packages/User/Anaconda.sublime-settings",
+		"/D/Development/Projects/ieee_cubicreg/examples/cr_14_node_polar.py",
+		"/C/Users/Dark Lord/AppData/Roaming/Sublime Text 3/Packages/Anaconda/Anaconda.sublime-settings",
+		"/C/Users/Dark Lord/AppData/Roaming/Sublime Text 3/Packages/SublimeLinter/SublimeLinter.sublime-settings",
+		"/C/Users/Dark Lord/AppData/Roaming/Sublime Text 3/Packages/SublimeREPL/config/Python/Main.sublime-menu",
+		"/C/Users/Dark Lord/AppData/Roaming/Sublime Text 3/Packages/SublimeLinter-pep8/README.md",
+		"/C/Users/Dark Lord/AppData/Roaming/Sublime Text 3/Packages/SublimeLinter/README.md",
+		"/C/Users/Dark Lord/AppData/Roaming/Sublime Text 3/Packages/AceJump/README.md",
+		"/C/Users/Dark Lord/AppData/Roaming/Sublime Text 3/Packages/AceJump/Default (Windows).sublime-keymap",
+		"/C/Users/Dark Lord/AppData/Roaming/Sublime Text 3/Packages/EasyMotion/README.md",
+		"/C/Users/Dark Lord/AppData/Roaming/Sublime Text 3/Packages/EasyMotion/EasyMotion.sublime-settings",
+		"/C/Users/Dark Lord/AppData/Roaming/Sublime Text 3/Packages/User/Python3 - Anaconda - Repl.sublime-build",
+		"/D/SaveHdd/saveрабстол/cubic_reg-master/examples/cr_16_node.py",
+		"/C/Users/Dark Lord/AppData/Roaming/Sublime Text 3/Packages/User/Python2 - Anaconda.sublime-build",
+		"/D/SaveHdd/_tmp/moder_ban.txt",
+		"/C/Users/Dark Lord/AppData/Roaming/Sublime Text 3/Packages/GitGutter/README.md",
+		"/C/Users/Dark Lord/AppData/Roaming/Sublime Text 3/Packages/PlainTasks/Readme.md",
+		"/C/Users/Dark Lord/AppData/Roaming/Sublime Text 3/Packages/User/GitSavvy.sublime-settings",
+		"/C/Users/Dark Lord/AppData/Roaming/Sublime Text 3/Packages/User/SideBarEnhancements/Open With/Side Bar.sublime-menu",
+		"/D/Development/Projects/cubic_reg-master/src/test.txt",
+		"/C/Users/Dark Lord/AppData/Roaming/Sublime Text 3/Packages/GitSavvy/GitSavvy.sublime-settings",
+		"/C/Users/Dark Lord/AppData/Roaming/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/C/Users/Dark Lord/AppData/Roaming/Sublime Text 3/Packages/Default/Preferences.sublime-settings",
+		"/C/Users/Dark Lord/AppData/Roaming/Sublime Text 3/Packages/Sync Settings/README.md",
+		"/C/Users/Dark Lord/AppData/Roaming/Sublime Text 3/Packages/User/SyncSettings.sublime-settings",
+		"/C/Users/Dark Lord/AppData/Roaming/Sublime Text 3/Packages/Sync Settings/SyncSettings.sublime-settings",
+		"/C/Users/Dark Lord/AppData/Roaming/Sublime Text 3/Packages/User/Side Bar.sublime-settings",
+		"/D/TORRENT/установочные пакеты/Программы/Sublime Text 3 Build 3126/Lynda - Learn Sublime Text 3 - The Basics/Exercise Files/roux_website/error.htm",
+		"/D/TORRENT/установочные пакеты/Программы/Sublime Text 3 Build 3126/Lynda - Learn Sublime Text 3 - The Basics/Exercise Files/roux_website/404.shtml",
+		"/D/TORRENT/установочные пакеты/Программы/Sublime Text 3 Build 3126/Lynda - Learn Sublime Text 3 - The Basics/Exercise Files/roux_website/403.shtml",
+		"/D/TORRENT/установочные пакеты/Программы/Sublime Text 3 Build 3126/Lynda - Learn Sublime Text 3 - The Basics/Exercise Files/roux_website/asdasd",
+		"/C/Users/Dark Lord/AppData/Roaming/Sublime Text 3/Packages/SideBarEnhancements/Side Bar.sublime-settings",
+		"/C/Users/Dark Lord/AppData/Roaming/Sublime Text 3/Packages/HyperlinkHelper/README.md",
+		"/C/Users/Dark Lord/AppData/Roaming/Sublime Text 3/Packages/A File Icon/README.md",
+		"/D/TORRENT/установочные пакеты/Программы/Sublime Text 3 Build 3126/Lynda - Learn Sublime Text 3 - The Basics/Exercise Files/roux_website/index.htm",
+		"/D/TORRENT/установочные пакеты/Программы/Sublime Text 3 Build 3126/Lynda - Learn Sublime Text 3 - The Basics/Exercise Files/roux_website2/_css/main.css",
+		"/D/TORRENT/установочные пакеты/Программы/Sublime Text 3 Build 3126/Lynda - Learn Sublime Text 3 - The Basics/Exercise Files/roux_website/_css/main.css",
+		"/D/TORRENT/установочные пакеты/Программы/Sublime Text 3 Build 3126/Lynda - Learn Sublime Text 3 - The Basics/Exercise Files/roux_website/_scripts/SpryTabbedPanels.js",
+		"/D/TORRENT/установочные пакеты/Программы/Sublime Text 3 Build 3126/Lynda - Learn Sublime Text 3 - The Basics/Exercise Files/roux_website2/_scripts/SpryTabbedPanels.css",
+		"/D/SaveHdd/_tmp/Temp1_В.Н.Пильщиков-Язык_макроассемблера_IBM_PC.zip/В.Н.Пильщиков-Язык_макроассемблера_IBM_PC.txt",
+		"/D/TORRENT/установочные пакеты/Программы/Sublime Text 3 Build 3126/Lynda - Learn Sublime Text 3 - The Basics/Exercise Files/roux_website/_scripts/SpryTabbedPanels.css",
+		"/D/TORRENT/установочные пакеты/Программы/Sublime Text 3 Build 3126/Lynda - Learn Sublime Text 3 - The Basics/Exercise Files/roux_website/admissions/request.htm",
+		"/C/Users/Dark Lord/AppData/Roaming/Sublime Text 3/Packages/PlainTasks/messages/Tutorial.todo",
+		"/D/TORRENT/установочные пакеты/Программы/Sublime Text 3 Build 3126/Lynda - Learn Sublime Text 3 - The Basics/001 Welcome.mp4",
+		"/D/SaveHdd/Desktop/ToDo/Hotkeys",
+		"/D/TORRENT/установочные пакеты/Программы/Sublime Text 3 Build 3126/Key.txt"
+	],
+	"find":
+	{
+		"height": 44.0
+	},
+	"find_in_files":
+	{
+		"height": 90.0,
+		"where_history":
+		[
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"numpy",
+			"\n    ",
+			"src",
+			"\n#",
+			"back",
+			"cr_16_node_mode_",
+			"p",
+			"title",
+			"<!doctype html>\n<html>\n<head>\n<meta charset=\"UTF-8\">\n<title>File not found</title>\n<!--[if lt IE 9]>\n<script src=\"http://html5shiv.googlecode.com/svn/trunk/html5.js\"></script>\n<![endif]-->\n<!--[if lt IE 9]>\n<script src=\"../_scripts/respond.min.js\"></script>\n<![endif]-->\n<link href=\"_css/main.css\" rel=\"stylesheet\" media=\"screen, projection\">\n</head>\n<body>\n<header class=\"errorHeader pageHeader\">\n<h1>Roux Academy of Art and Design<a href=\"/index.htm\" title=\"home\"></a></h1>\n<nav id=\"pageNav\" class=\"cf\">\n  <ul>\n    <li><a href=\"programs/programs.htm\" title=\"programs\">Programs</a></li>\n    <li><a href=\"admissions/admissions.htm\" title=\"admissions\">Admissions</a></li>\n    <li><a href=\"student_portal.htm\" title=\"student portal\">Student Portal</a></li>\n    <li><a href=\"campus_portal.htm\" title=\"campus portal\">Campus</a></li>\n    <li><a href=\"alumni.htm\" title=\"alumni\">Alumni</a></li>\n    <li><a href=\"about/about.htm\"  title=\"about Roux Academy\">About</a></li>\n  </ul>\n</nav>\n</header>\n<article id=\"mainContent\">\n  <h1>We apologize!</h1>\n  <p>It seems like the page you're looking for either doesn't exist, or perhaps the name has changed. In order to help you find what you're looking for, feel free to use the search option below, or choose a destination from the list of links available below. Again, we apologize for the inconvenience, and if you still can't find what you're looking for, feel free to <a href=\"admissions/request.htm\">contact us</a>.</p>\n  <form id=\"frmSearch\" action=\"http://learn.rouxacademy.com\" method=\"post\" class=\"search-form\">\n    <label for=\"search\">Looking for something?</label>\n    <input type=\"search\" placeholder=\"Search\" title=\"Search\" class=\"q\" name=\"search\" id=\"search\">\n    <input type=\"submit\" class=\"submit\" value=\"Go\" name=\"submit\">\n  </form>\n  <h2>Frequent Destinations</h2>\n  <ul class=\"links\">\n    <li><a href=\"/index.hm\">Home page</a></li>\n    <li><a href=\"programs/programs.htm\">Academic Programs</a></li>\n    <li><a href=\"admissions/aid.htm\">Financial Aid</a></li>\n    <li><a href=\"admissions/apply.htm\">Application Process</a></li>\n    <li><a href=\"admissions/housing.htm\">Student Housing</a></li>\n    <li><a href=\"campus/index.htm\">Campus Portal</a></li>\n    <li><a href=\"students/index.htm\">Student Portal</a></li>\n    <li><a href=\"campus/tour.htm\">Campus Tour</a></li>\n    <li><a href=\"programs/internships.htm\">Internship Programs</a></li>\n    <li><a href=\"programs/catalog.htm\">Course Catalog</a></li>\n    <li><a href=\"http://www.rouxmuseum.com\">Marbielle Roux Museum</a></li>\n    <li><a href=\"admissions/request.htm\">Transcript Request</a></li>\n    <li><a href=\"admissions/review.htm\">Portfolio Review</a></li>\n  </ul>\n  <h2>About Roux Academy</h2>\n  <p>We&rsquo;ve been providing fine art and design education for over 150 years. But age hasn&rsquo;t slowed us down. Roux strives to build on our prestigious history, developing courses and nurturing graduates that will shape the next 150 years. When you join Roux, you join a unique community at one of our four campuses, which reflect the subject areas studied there. You&rsquo;ll be surrounded by artists, designers, filmmakers, and writers with similar passions and interests. And the supportive environment at Roux encourages collaboration and creates enthusiasm among our students. Our teachers help you develop and push your creative boundaries, while giving you the space and time to explore your subject area and to find your own style. Join Roux Academy and join a community that&rsquo;s dedicated to helping you reach your highest artistic and creative potential.</p>\n<p>&nbsp;</p>\n<p>&nbsp;</p>\n</article>\n<aside>\n<section class=\"academic info\">\n<h2>Academic Links</h2>\n<ul>\n  <li><a href=\"programs/undergraduate.htm\" title=\"undergraduate degrees\">Undergraduate Degrees</a></li>\n  <li><a href=\"programs/graduate.htm\" title=\"Graduate Degrees\">Graduate Degree Programs</a></li>\n  <li><a href=\"programs/continuing-education.htm\" title=\"Continuing education\">Continuing Education</a></li>\n  <li><a href=\"programs/faculty.htm\" title=\"Faculty\">Faculty Profiles</a></li>\n   <li><a href=\"programs/application-requirement.htm\" title=\"Application requirements\">Application Requirements</a></li>\n  <li><a href=\"programs/study-abroad.htm\" title=\"Study abroad programs\">Study Abroad Programs</a></li>\n  <li><a href=\"programs/internships.htm\" title=\"Internship programs\">Internship Programs</a></li>\n  <li><a href=\"programs/calendar.htm\" title=\"Academic calendar\">Academic Calendar</a></li>\n</ul>\n</section>\n<section class=\"connect info\">\n<h2>Connect with us</h2>\n<ul>\n  <li><a href=\"http://www.twitter.com/rouxacademy\" title=\"Follow us!\" target=\"_blank\" class=\"twitter\">Twitter</a></li>\n  <li><a href=\"https://plus.google.com/\" title=\"Google Plus\" target=\"_blank\" class=\"google\">Google Plus</a></li>\n  <li><a href=\"http://facebook.com\" title=\"Be our friend\" target=\"_blank\" class=\"facebook\">Facebook</a></li>\n  <li><a href=\"http://www.linkedin.com\" title=\"Let's connect\" target=\"_blank\" class=\"linked\">LinkedIn</a></li>\n</ul>\n</section>\n<section class=\"find info\">\n<h2>Find out more</h2>\n<ul>\n<li><a href=\"tour.htm\" title=\"Take a campus tour\">Take a campus tour</a></li>\n<li><a href=\"catalog.htm\" title=\"course catalog\">Download a course catalog</a></li>\n<li><a href=\"admissions.htm\" title=\"Apply now\">Apply now</a></li>\n</ul>\n</section>\n<section class=\"show info\">\n<h2>Current Show</h2>\n<img src=\"_images/show1.jpg\" width=\"285\" height=\"230\" alt=\"Current show\">\n<p>Join us on May 11th for the opening reception of Ceramic Currency, an annual show presented by graduates from the Craft and Design program. Come see an exhibition of contemporary pottery and ceramic sculpture by over 30 artists. <a href=\"programs/current_show.htm\" title=\"current show\" class=\"more\">more info</a></p>\n</section>\n</aside>\n<footer id=\"pageFooter\" class=\"cf\">\n<nav class=\"footerNav\">\n<section class=\"col\">\n<h3>About Roux Academy</h3>\n  <div class=\"col1\">\n  <ul>\n  <li><a href=\"mission.htm\" title=\"Our mission\">Mission Statement</a></li>\n  <li><a href=\"history.htm\" title=\"school history\">School History</a></li>\n  <li><a href=\"accreditation.htm\" title=\"accreditation and affliates\">Accreditation &amp; Affiliates</a></li>\n  <li><a href=\"board.htm\" title=\"board members\">Board Members</a></li>\n  </ul>\n  </div>\n  <div class=\"col2\">\n  <ul>\n  <li><a href=\"faculty.htm\" title=\"faculty and staff\">Faculty &amp; Staff</a></li>\n  <li><a href=\"visiting_professors.htm\" title=\"visiting professors\">Visiting Professors</a></li>\n  <li><a href=\"museum.htm\" title=\"Maribielle Roux Museum\">Marbielle Roux Museum</a></li>\n  <li><a href=\"directions.htm\" title=\"directions\">Map &amp; Directions</a></li>\n  </ul>\n  </div>\n</section>\n<section class=\"col\">\n<h3>Admissions &amp; Programs</h3>\n  <div class=\"col1\">\n  <ul>\n  <li><a href=\"degrees.htm\" title=\"Degree programs\">Degree Programs</a></li>\n  <li><a href=\"catalog.htm\" title=\"course catalog\">Course Catalog</a></li>\n  <li><a href=\"fine_art.htm\" title=\"fine art programs\">Fine Art Programs</a></li>\n  <li><a href=\"design.htm\" title=\"design concentration\">Design Concentration</a></li>\n  </ul>\n  </div>\n  <div class=\"col2\">\n  <ul>\n  <li><a href=\"fashion.htm\" title=\"fashion program\">Fashion Program</a></li>\n  <li><a href=\"product_design.htm\" title=\"product design\">Product Design</a></li>\n  <li><a href=\"continuing_ed.htm\" title=\"Continuing Education\">Continuing Education</a></li>\n  <li><a href=\"financial_aid.htm\" title=\"tuition and financial aid\">Tuition &amp; Financial Aid</a></li>\n  </ul>\n  </div>\n</section>\n<section class=\"col\">\n<h3>Student Resources</h3>\n  <div class=\"col1\">\n  <ul>\n  <li><a href=\"campus.htm\" title=\"Campus information\">Campus Information</a></li>\n  <li><a href=\"housing.htm\" title=\"student housing\">Student Housing</a></li>\n  <li><a href=\"contact.htm\" title=\"transcript request\">Transcript Request</a></li>\n  <li><a href=\"applying.htm\" title=\"application process\">Application Process</a></li>\n  </ul>\n  </div>\n  <div class=\"col2\">\n  <ul>\n  <li><a href=\"portfolio_review.htm\" title=\"portfolio review\">Portfolio Review</a></li>\n  <li><a href=\"conselling.htm\" title=\"career counselling\">Career Counselling</a></li>\n  <li><a href=\"internships.htm\" title=\"internship programs\">Internship Programs</a></li>\n  <li><a href=\"student_portal.htm\" title=\"student portal login\">Student Portal Login</a></li>\n   </ul>\n  </div>\n</section>\n</nav>\n<p>&copy;Copyright  Roux Academy of Art &amp; Design.  All rights reserved.<a href=\"privacy.htm\" title=\"privacy statement\"> Privacy Statement</a> |<a href=\"legal.htm\" title=\"legal terms\"> Legal Terms and Conditions</a> |<a href=\"disclosures.htm\" title=\"student outcomes and disclosures\"> Student Outcomes/Disclosures</a></p>\n</footer>\n</body>\n</html>\n",
+			"class",
+			"class = ",
+			"class =",
+			"span",
+			"supposed",
+			"href"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"test"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": false,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 2,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "examples/cr_16_node_test.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 5863,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								3197,
+								3198
+							]
+						],
+						"settings":
+						{
+							"git_gutter_is_enabled": true,
+							"git_savvy.repo_path": "D:\\Development\\Projects\\ieee_cubicreg",
+							"syntax": "Packages/Python/Python.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 675.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "src/createdata.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 5550,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								97,
+								97
+							]
+						],
+						"settings":
+						{
+							"git_gutter_is_enabled": true,
+							"git_savvy.repo_path": "D:\\Development\\Projects\\ieee_cubicreg",
+							"syntax": "Packages/Python/Python.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "examples/cr_14_node_polar.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 5965,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1404,
+								1404
+							]
+						],
+						"settings":
+						{
+							"git_gutter_is_enabled": true,
+							"git_savvy.repo_path": "D:\\Development\\Projects\\ieee_cubicreg",
+							"syntax": "Packages/Python/Python.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 26.0
+	},
+	"input":
+	{
+		"height": 40.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.GitSavvy":
+	{
+		"height": 118.0
+	},
+	"output.exec":
+	{
+		"height": 167.0
+	},
+	"output.find_results":
+	{
+		"height": 47.0
+	},
+	"pinned_build_system": "Packages/User/Python3 - Anaconda.sublime-build",
+	"project": "ieee-cubicreg.sublime-project",
+	"replace":
+	{
+		"height": 48.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"ind",
+				"roux_website\\index.htm"
+			],
+			[
+				"inde",
+				"roux_website\\index.htm"
+			],
+			[
+				"css",
+				"roux_website\\_css\\main.css"
+			],
+			[
+				"spr",
+				"roux_website\\_scripts\\SpryTabbedPanels.js"
+			],
+			[
+				"",
+				"roux_website\\404.shtml"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"",
+				"D:\\SaveHdd\\Desktop\\cubic_reg-master\\cubic-reg-test.sublime-project"
+			]
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 357.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"",
+				"TabbedPanels"
+			]
+		],
+		"width": 374.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+		"last_automatic_layout":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		]
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 352.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

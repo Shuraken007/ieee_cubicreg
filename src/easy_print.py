@@ -1,8 +1,8 @@
-from __future__ import print_function
 from collections import OrderedDict
 import sys
 import types
 import numpy as np
+
 
 class easy_print:
     def __init__(self):
@@ -10,8 +10,9 @@ class easy_print:
         self.default_type_print = {}
         self.col_sep = ' '
         self.file_list = {}
+
     def add_phase(self, *printed, **params):
-        #parse phase
+        # parse phase
         if params.get('phase'):
             temp_phase = params.get('phase')
         else:
@@ -20,7 +21,7 @@ class easy_print:
             self.phases[temp_phase] = {}
         if not self.phases[temp_phase].get('data'):
             self.phases[temp_phase]['data'] = OrderedDict()
-        #parse file
+        # parse file
         if params.get('file'):
             self.phases[temp_phase]['file'] = params.get('file')
             if not self.file_list.get(params.get('file')):
@@ -33,7 +34,7 @@ class easy_print:
             self.phases[temp_phase]['col_sep'] = ' '
         if params.get('check_phase'):
             self.phases[temp_phase]['check_phase'] = params.get('check_phase')
-        #parse printed simple params
+        # parse printed simple params
         if printed:
             for i in printed:
                 if not self.phases[temp_phase]['data'].get(i):
@@ -46,13 +47,15 @@ class easy_print:
                     self.phases[temp_phase]['data'][key] = {}
                 self.phases[temp_phase]['data'][key]['var'] = params[key]
                 self.phases[temp_phase]['data'][key]['len'] = len(str(key))
+
     def default_print(self, **kwargs):
         for key in kwargs.keys():
             self.default_type_print[key] = kwargs[key]
 #    def close(self):
 #        for i in self.phases_outfile.values():
 #            i.close()
-    def print_head(self, data = {'var1': 'base_value'}, phase = 'phase', check_phase = None):
+
+    def print_head(self, data={'var1': 'base_value'}, phase='phase', check_phase=None):
         if self.phases.get(phase):
             temp_file = self.phases[phase]['file']
             temp_result_out = ''
@@ -82,7 +85,7 @@ class easy_print:
                             else:
                                 vect_pattern = 'x{:d}'
                             temp_column = vect_pattern.format(i)
-                            temp_column1 = '{: >%d}'% int(temp_len / val.get('length'))
+                            temp_column1 = '{: >%d}' % int(temp_len / val.get('length'))
                             vect_form = vect_form + temp_column1.format(temp_column)
                         val = vect_form
                         temp_print_type = ' {:s}'
@@ -97,7 +100,7 @@ class easy_print:
         else:
             print("phase %s doesn't exist" % phase)
 
-    def print_phase(self, phase = 'phase', data = {'var1': 'base_value'}):
+    def print_phase(self, phase='phase', data={'var1': 'base_value'}):
         if self.phases.get(phase):
             temp_file = self.phases[phase]['file']
             for key in self.phases[phase]['data'].keys():
@@ -128,13 +131,13 @@ class easy_print:
                     else:
                         temp_o_file = open(temp_file, 'w')
                         self.file_list[temp_file] = 1
-                print(temp_result_out, self.phases[phase]['col_sep'], file =temp_o_file, end = '')
+                print(temp_result_out, self.phases[phase]['col_sep'], file=temp_o_file, end='')
             print('\n', file=temp_o_file, end='')
 
         else:
             print("phase %s doesn't exist" % phase)
 
-#easy = easy_print()
-#easy.add_phase('a', 'b', 'c', 'd', phase = 'test', file = 'test.txt', c = lambda: print('print_test'), b = '{:>6}', a = '{: 5.3e}', sep = ' | ')
-#easy.default_print(int = '{:11.11e}')
-#easy.print_phase('test', {'a' : 1, 'b' : 2, 'c' : 3})
+# easy = easy_print()
+# easy.add_phase('a', 'b', 'c', 'd', phase = 'test', file = 'test.txt', c = lambda: print('print_test'), b = '{:>6}', a = '{: 5.3e}', sep = ' | ')
+# easy.default_print(int = '{:11.11e}')
+# easy.print_phase('test', {'a' : 1, 'b' : 2, 'c' : 3})
