@@ -12,7 +12,7 @@ import time
 if __name__ == '__main__':
 
   num_node = 16
-  ballance_node = 16
+  ballance_node = 16 - 1  # - 1 because of array indexing starting from 0
   name_node = np.array([40, 42, 73, 136, 186, 187, 206, 207, 209, 212, 214, 220, 222, 228, 397, 700])
   node_from = np.array([397, 73, 186, 206, 206, 206, 206, 206, 209, 209, 212, 214, 214, 222, 222, 228])
   node_to = np.array([207, 212, 206, 40, 42, 220, 228, 700, 187, 207, 207, 212, 222, 136, 187, 73])
@@ -31,16 +31,16 @@ if __name__ == '__main__':
   bg = bg * 1.j
   # S = np.rand m.sample(num_node-1)*(100+80j)
   S = np.array([0.78203, 4.012712, -6.45068, -6.45086, -5.59356, -4.30349, 10.7697, -3.49422, -1.86383, 59.4273, -0.39498,
-                -3.81818, -0.16991, -3.15909, 14.52273])
+                -3.81818, -0.16991, -3.15909, 14.52273]) - 400j
   # S = np.ones((1, 15))
   U_0 = 226.04613
   Z = {'Z': Z, 'bg': bg}
   f, grad, hess = src.createdata.generate_cubic_system(S, Z, num_node, ballance_node, U_0)
-  u = np.ones((1, num_node - 1)) * (220)
-  v = np.ones((1, num_node - 1)) * 0
-  x0 = np.concatenate((u, v)).ravel()
+  u = np.ones(num_node - 1) * (220)
+  v = np.ones(num_node - 1) * 0
+  x0 = np.concatenate((u, v))
 
-  steptype = 'diff'
+  steptype = 'base+diff'
   m_file = '..\\result\\' + 'cr_16_node_' + steptype + '.txt'
 
   easy = ep.easy_print()
@@ -74,7 +74,7 @@ if __name__ == '__main__':
     print('S = ', S, file=fi)
   f, grad, hess = src.createdata.generate_cubic_system(S, Z, num_node, ballance_node, U_0)
   start = time.time()
-  cr = src.cubic_reg.CubicRegularization(x0, f, None, None, conv_tol=1e-8, L0=0.1, print_data=easy,
+  cr = src.cubic_reg.CubicRegularization(x0, f, grad, hess, conv_tol=1e-8, L0=0.1, print_data=easy,
                                          stepmin=steptype, epsilon=0.0001)
   x_opt, intermediate_points, n_iter, flag = cr.cubic_reg()
   end = time.time()

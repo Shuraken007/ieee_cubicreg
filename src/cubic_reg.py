@@ -257,9 +257,38 @@ class CubicRegularization(Algorithm):
                         H = self.hess_x
                         g = self.grad_x
 
-                        def x(r): return np.linalg.inv(H + mk * r * I / 2).dot(g)
-                        x0 = (2 * (g - H.dot(x(-s))) / (mk * I.dot(x(-s))))[1]
+                        def x(r): return np.linalg.inv(H + mk * r @ I / 2)@g
+                        x0 = (2 * (g - H@x(-s)) / (mk * I@x(-s)))[1]
                         self.stepmin_diff_x = x0
+                elif self.stepmin == "base+diff":
+                    self.itertime_s = time.time()
+                    if self.iter >= 1 and self.bd_iter_timer > 0 and self.bd_iter_timer_value > 1:
+                        s, flag, self.stepmin_diff_x = aux_problem.solve_diff(self.stepmin_diff_x)
+                        self.bd_iter_timer -= 1
+                    else:
+                        if self.iter >= 1 and self.bd_iter_timer == 0:
+                            self.itertimep_test_s = time.time()
+                        s, flag = aux_problem.solve()
+                        I = np.identity(np.size(self.hess_x, 0))
+                        H = self.hess_x
+                        g = self.grad_x
+
+                        def x(r): return np.linalg.inv(H + mk * r @ I / 2)@g
+                        x0 = (2 * (g - H@x(-s)) / (mk * I@x(-s)))[1]
+                        self.stepmin_diff_x = x0
+
+                        if self.iter == 1 and self.bd_iter_timer == 0:
+                            self.itertimep_test_f = time.time()
+                            degree = (self.itertimep_test_f - self.itertimep_test_s) - (self.itertime_s - self.itertime_f)
+                            if degree > 0:
+                                self.bd_iter_timer_value *= 2
+                            else:
+                                self.bd_iter_timer_value /= 2
+                            self.bd_iter_timer = self.bd_iter_timer_value
+                        else:
+                            self.bd_iter_timer_value = 10
+                            self.bd_iter_timer = self.bd_iter_timer_value
+                    self.itertime_f = time.time()
                 elif self.stepmin == 'poly':
                     s, flag = aux_problem.solve_poly()
 

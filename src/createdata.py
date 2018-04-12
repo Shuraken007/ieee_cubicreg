@@ -3,7 +3,7 @@ import numpy as np
 
 def Cond_matrix(Z):
     if type(Z) != dict:
-        res = {'Z': Z}
+        Z = {'Z': Z}
 
     N = Z['Z'].shape[1]
     Y = np.zeros(Z['Z'].shape, dtype=np.complex)
@@ -30,92 +30,112 @@ def Cond_matrix(Z):
 
 
 def generate_cubic_system(S, Z, num_node, ballance_node, U_0):
-
-    P = S.real.copy()
-    P.resize(P.size, 1)
-    Q = S.imag.copy()
-    Q.resize(Q.size, 1)
     c_matr = Cond_matrix(Z)
     G = c_matr.real
     B = c_matr.imag
     G_sys = G
     B_sys = B
     g_0 = (G[:, ballance_node] + B[:, ballance_node] * 1j).real * U_0
-    g_0.resize(g_0.size, 1)
-    g_0 = np.delete(g_0, ballance_node, axis=0)
+    g_0 = np.delete(g_0, ballance_node)
     b_0 = (G[:, ballance_node] + B[:, ballance_node] * 1j).imag * U_0
-    b_0.resize(b_0.size, 1)
-    b_0 = np.delete(b_0, ballance_node, axis=0)
+    b_0 = np.delete(b_0, ballance_node)
     G_sys = np.delete(G_sys, ballance_node, axis=1)
     G_sys = np.delete(G_sys, ballance_node, axis=0)
     B_sys = np.delete(B_sys, ballance_node, axis=1)
     B_sys = np.delete(B_sys, ballance_node, axis=0)
-    Y_sys = np.bmat([[G_sys, -B_sys], [B_sys, G_sys]])
-    a = np.ones((1, 30)).ravel()
+    Y_sys = np.bmat([[G_sys, -B_sys], [B_sys, G_sys]]).A
 
-    def u(x): print(x); return x.reshape(x.size, 1)[0: int(x.size / 2)]
+    def u(x): return x[:x.size // 2]
 
-    def v(x): return x.reshape(x.size, 1)[int(x.size / 2): x.size]
+    def v(x): return x[x.size // 2:]
 
-    def D(x): return np.bmat([[np.diag(u(x).ravel()), np.diag(v(x).ravel())], [np.diag(v(x).ravel()), np.diag(-u(x).ravel())]])
+    def D(x): return np.bmat([[np.diag(u(x)), np.diag(v(x))], [np.diag(v(x)), np.diag(-u(x))]]).A
 
-    def F(x): return np.asarray(np.concatenate((P, Q)) + D(x) * (Y_sys * np.asmatrix(x.reshape(x.size, 1)) + np.asmatrix(np.concatenate((g_0, b_0)))))
+    def F(x): return np.concatenate((S.real, S.imag)) + D(x)@(Y_sys @ x + np.concatenate((g_0, b_0)))
 
-    def D_F(x): return np.bmat([[np.diag(F(x)[0:num_node - 1].ravel()), -np.diag(F(x)[num_node - 1:2 * (num_node - 1)].ravel())],
-                                [np.diag(F(x)[num_node - 1:2 * (num_node - 1)].ravel()), np.diag(F(x)[0:num_node - 1].ravel())]
-                                ])
+    def D_F(x): return np.bmat([[np.diag(F(x)[:x.size // 2]), -np.diag(F(x)[x.size // 2:])],
+                                [np.diag(F(x)[x.size // 2:]), np.diag(F(x)[:x.size // 2])]
+                                ]).A
 
-    def J(x): return np.bmat([[np.diag((G_sys.dot(u(x)) - B_sys.dot(v(x))).ravel()), np.diag((B_sys.dot(u(x)) + G_sys.dot(v(x))).ravel())],
-                              [-np.diag((B_sys.dot(u(x)) + G_sys.dot(v(x))).ravel()), np.diag((G_sys.dot(u(x)) - B_sys.dot(v(x))).ravel())]
-                              ]) + np.bmat([[np.diag(g_0.ravel()), np.diag(b_0.ravel())], [-np.diag(b_0.ravel()), np.diag(g_0.ravel())]]) + D(x) * Y_sys
+    def J(x): return np.bmat([[np.diag((G_sys@u(x) - B_sys@v(x))), np.diag((B_sys.dot(u(x)) + G_sys.dot(v(x))))],
+                              [-np.diag((B_sys@u(x)) + G_sys@v(x)), np.diag((G_sys@u(x)) - B_sys@v(x))]
+                              ]).A + np.bmat([[np.diag(g_0), np.diag(b_0)], [-np.diag(b_0), np.diag(g_0)]]).A + D(x) @ Y_sys
 
-    def cs_g(x): return np.asarray(F(x).ravel() * J(x)).ravel()
+    def cs_g(x): return F(x) @ J(x)
 
-    def cs_H(x): return np.asarray(J(x).T * J(x) + D_F(x) * Y_sys + Y_sys.T * D_F(x).T)
+    def cs_H(x): return J(x).T @ J(x) + D_F(x) @ Y_sys + Y_sys.T @ D_F(x).T
 
     def F_min(x): return 0.5 * np.linalg.norm(F(x))**2
-    # a = np.ones((30, 1))
+
+    # test = np.array([100, 100, 1, 1])
+    # print("g: ", cs_g(test))
+    # print("H: ", cs_H(test))
+
     return F_min, cs_g, cs_H
 
 
-def generate_cubic_system_polar(S, Z, num_node, ballance_node, U_0):
-    P = S.real.copy()
-    P.resize(P.size, 1)
-    Q = S.imag.copy()
-    Q.resize(Q.size, 1)
-    c_matr = Cond_matrix(Z)
-    G = c_matr.real
-    B = c_matr.imag
-    G_sys = G
-    B_sys = B
-    G_sys = np.delete(G_sys, ballance_node, axis=1)
-    G_sys = np.delete(G_sys, ballance_node, axis=0)
-    B_sys = np.delete(B_sys, ballance_node, axis=1)
-    B_sys = np.delete(B_sys, ballance_node, axis=0)
+def generate_polar_system(F_min, cs_g, cs_H):
 
-    def d(x): return x.reshape(x.size, 1)[0:int(x.size / 2)]
+    def v(x): return x[:x.size // 2]
 
-    def v(x): return x.reshape(x.size, 1)[int(x.size / 2):x.size]
+    def th(x): return x[x.size // 2:]
 
-    def D(x): return np.bmat([[np.diag(u(x).ravel()), np.diag(v(x).ravel())], [np.diag(v(x).ravel()), np.diag(-u(x).ravel())]])
+    def convert_p_to_d(x): return np.append(v(x) * np.cos(th(x)), v(x) * np.sin(th(x)))
 
-    def F(x): return np.asarray(np.concatenate((P, Q)) + D(x) * (Y_sys * np.asmatrix(x.reshape(x.size, 1)) + np.asmatrix(np.concatenate((g_0, b_0)))))
+    def T(x): return np.bmat([[np.diag(np.cos(th(x))), np.diag(-v(x) * np.sin(th(x)))],
+                              [np.diag(np.sin(th(x))), np.diag(v(x) * np.cos(th(x)))]]).A
 
-    def D_F(x): return np.bmat([[np.diag(F(x)[0:num_node - 1].ravel()), -np.diag(F(x)[num_node - 1:2 * (num_node - 1)].ravel())],
-                                [np.diag(F(x)[num_node - 1:2 * (num_node - 1)].ravel()), np.diag(F(x)[0:num_node - 1].ravel())]
-                                ])
+    def polar_F_min(x): return F_min(convert_p_to_d(x))
 
-    def J(x): return np.bmat([[H(d), N(d)],
-                              [-np.diag((B_sys.dot(u(x)) + G_sys.dot(v(x))).ravel()), np.diag((G_sys.dot(u(x)) - B_sys.dot(v(x))).ravel())]
-                              ]) + np.bmat([[np.diag(g_0.ravel()), np.diag(b_0.ravel())], [-np.diag(b_0.ravel()), np.diag(g_0.ravel())]]) + D(x) * Y_sys
+    def polar_g(x): return cs_g(convert_p_to_d(x))@T(x)
 
-    def cs_g(x): return np.asarray(F(x).ravel() * J(x)).ravel()
+    def polar_H(x):
+        H = cs_H(convert_p_to_d(x))
+        g = cs_g(convert_p_to_d(x))
+        c = np.cos(th(x))
+        s = np.sin(th(x))
+        V = v(x)
+        l = x.size // 2
+        A = np.array([[
+            H[i, j] * c[i] * c[j] +
+            H[i, j + l] * c[i] * s[j] +
+            H[i + l, j] * s[i] * c[j] +
+            H[i + l, j + l] * s[i] * s[j]
+            for i in range(0, l)]
+            for j in range(0, l)
+        ])
+        B = np.array([[
+            -H[i, j] * c[i] * V[j] * s[j] +
+            H[i, j + l] * c[i] * V[j] * c[j] -
+            H[i + l, j] * s[i] * V[j] * s[j] +
+            H[i + l, j + l] * s[i] * V[j] * c[j] +
+            (-g[i] * s[i] + g[i + l] * c[i] if i == j else 0)
+            for i in range(0, l)]
+            for j in range(0, l)
+        ])
+        C = np.array([[
+            -H[i, j] * V[i] * s[i] * c[j] -
+            H[i, j + l] * V[i] * s[i] * s[j] +
+            H[i + l, j] * V[i] * c[i] * c[j] +
+            H[i + l, j + l] * V[i] * c[i] * s[j] +
+            (-g[i] * s[i] + g[i + l] * c[i] if i == j else 0)
+            for i in range(0, l)]
+            for j in range(0, l)
+        ])
+        D = np.array([[
+            H[i, j] * V[i] * s[i] * V[j] * s[j] -
+            H[i, j + l] * V[i] * s[i] * V[j] * c[j] +
+            H[i + l, j] * V[i] * c[i] * V[j] * s[j] -
+            H[i + l, j + l] * V[i] * c[i] * V[j] * c[j] +
+            (-g[i] * V[i] * c[i] - g[i + l] * V[i] * s[i] if i == j else 0)
+            for i in range(0, l)]
+            for j in range(0, l)
+        ])
+        return np.bmat([[A, B], [C, D]]).A
 
-    def cs_H(x): return np.asarray(J(x).T * J(x) + D_F(x) * Y_sys + Y_sys.T * D_F(x).T)
-
-    def F_min(x): return 0.5 * np.linalg.norm(F(x))**2
-    # a = np.ones((30, 1))
-    return F_min, cs_g, cs_H
+    # orig_test = np.array([100, 100, 1, 1])
+    # test = np.append(abs(v(orig_test) + th(orig_test) * 1.j), np.angle(v(orig_test) + th(orig_test) * 1.j))
+    return polar_F_min, polar_g, polar_H
 
 
 def test_U(U, Z, ballance_node, U_0):
@@ -125,7 +145,7 @@ def test_U(U, Z, ballance_node, U_0):
     Y = np.delete(Y, ballance_node, axis=1)
     U_restore = np.zeros(int(U.size / 2), dtype='complex').reshape(int(U.size / 2), 1)
     for i in range(0, int(U.size / 2)):
-        U_restore[i] = U[i] + U[U.size / 2 + i] * 1.j
+        U_restore[i] = U[i] + U[int(U.size / 2) + i] * 1.j
     S = (np.diag(U_restore.ravel())).conjugate().dot(Y.dot(U_restore) + Y_ballance.dot(U_0))
     S = -S.conjugate()
     return S.ravel()

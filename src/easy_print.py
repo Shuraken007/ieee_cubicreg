@@ -98,7 +98,8 @@ class easy_print:
             else:
                 print(temp_result_out, self.phases[phase]['col_sep'])
         else:
-            print("phase %s doesn't exist" % phase)
+            pass
+            # print("phase %s doesn't exist" % phase)
 
     def print_phase(self, phase='phase', data={'var1': 'base_value'}):
         if self.phases.get(phase):
@@ -135,7 +136,8 @@ class easy_print:
             print('\n', file=temp_o_file, end='')
 
         else:
-            print("phase %s doesn't exist" % phase)
+            pass
+            # print("phase %s doesn't exist" % phase)
 
 # easy = easy_print()
 # easy.add_phase('a', 'b', 'c', 'd', phase = 'test', file = 'test.txt', c = lambda: print('print_test'), b = '{:>6}', a = '{: 5.3e}', sep = ' | ')
