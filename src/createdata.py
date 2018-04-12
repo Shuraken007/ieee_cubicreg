@@ -123,10 +123,10 @@ def generate_polar_system(F_min, cs_g, cs_H):
             for j in range(0, l)
         ])
         D = np.array([[
-            H[i, j] * V[i] * s[i] * V[j] * s[j] -
-            H[i, j + l] * V[i] * s[i] * V[j] * c[j] +
-            H[i + l, j] * V[i] * c[i] * V[j] * s[j] -
-            H[i + l, j + l] * V[i] * c[i] * V[j] * c[j] +
+            H[i, j] * V[i] * s[i] * V[j] * s[j]
+            - H[i, j + l] * V[i] * s[i] * V[j] * c[j]
+            - H[i + l, j] * V[i] * c[i] * V[j] * s[j]
+            + H[i + l, j + l] * V[i] * c[i] * V[j] * c[j] +
             (-g[i] * V[i] * c[i] - g[i + l] * V[i] * s[i] if i == j else 0)
             for i in range(0, l)]
             for j in range(0, l)

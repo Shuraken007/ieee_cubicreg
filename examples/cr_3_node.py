@@ -2,9 +2,31 @@ import numpy as np
 import src.cubic_reg
 import src.createdata
 import src.easy_print as ep
+import os
+import sys
 import time
 
+def pretty(d, log, indent=0):
+   for key, value in d.items():
+      print('\t' * indent + str(key), file = log)
+      if isinstance(value, dict):
+         pretty(value, file, indent+1)
+      else:
+        if isinstance(value, str):
+          value = value.split(';')
+        else:
+          value = [value]
+        for v in value:
+          print('\t' * (indent+1) + str(v), file = log)
+
 if __name__ == '__main__':
+
+  log = open('log.txt', 'w')
+  print('>>>>>>>>>>>sys.path<<<<<<<<<<<<<<\n\n\n', file = log)
+  for p in sys.path:
+      print(p, file = log)
+  print('\n\n\n>>>>>>>>>>>os.environ<<<<<<<<<<<<<<\n\n\n', file = log)
+  pretty(os.environ, log)
   num_node = 3
   ballance_node = 3 - 1
   Z = np.array([
@@ -27,7 +49,7 @@ if __name__ == '__main__':
   x0 = np.append(u, v)
   x0_polar = np.append(abs(u + v * 1.j), np.angle(u + v * 1.j))
 
-  steptype = 'base'
+  steptype = 'base+diff'
   m_file = '..\\result\\' + 'cr_3_node_polar_' + steptype + '.txt'
 
   easy = ep.easy_print()
@@ -48,7 +70,7 @@ if __name__ == '__main__':
                  )
   start = time.time()
   # cr = src.cubic_reg.CubicRegularization(x0, f, grad, hess, conv_tol=1e-10, L0=0.11, print_data=easy, stepmin=steptype, epsilon=0.0001)
-  cr = src.cubic_reg.CubicRegularization(x0_polar, f, grad, None, conv_tol=1e-10, L0=0.11, print_data=easy, stepmin=steptype, epsilon=0.0001)
+  cr = src.cubic_reg.CubicRegularization(x0_polar, f, grad, hess, conv_tol=1e-10, L0=0.11, print_data=easy, stepmin=steptype, epsilon=0.0001)
 
   x_opt, intermediate_points, n_iter, flag = cr.cubic_reg()
   end = time.time()

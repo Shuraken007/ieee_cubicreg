@@ -48,18 +48,19 @@ if __name__ == '__main__':
   easy = ep.easy_print()
   easy.file_list[m_file] = 1
   open(m_file, 'w')
-  for i in range(1, 30):
+  for i in range(1, 50):
     f, grad, hess = src.createdata.generate_cubic_system(S, Z, num_node, ballance_node, U_0)
+    # f, grad, hess = src.createdata.generate_polar_system(f, grad, hess)
     start1 = time.time()
-    cr = src.cubic_reg.CubicRegularization(x0, f, grad, hess, conv_tol=1e-5, L0=0.01, print_data=easy, stepmin='base')
+    cr = src.cubic_reg.CubicRegularization(x0, f, grad, hess, conv_tol=1e-5, L0=0.01, print_data=easy, stepmin='diff')
     x_opt, intermediate_points, n_iter, flag = cr.cubic_reg()
     end1 = time.time()
     start2 = time.time()
-    cr = src.cubic_reg.CubicRegularization(x0, f, grad, hess, conv_tol=1e-5, L0=0.01, print_data=easy, stepmin='diff')
+    cr = src.cubic_reg.CubicRegularization(x0, f, grad, hess, conv_tol=1e-5, L0=0.01, print_data=easy, stepmin='base+diff')
     x_opt, intermediate_points, n_iter, flag = cr.cubic_reg()
     end2 = time.time()
     start3 = time.time()
-    cr = src.cubic_reg.CubicRegularization(x0, f, grad, hess, conv_tol=1e-5, L0=0.01, print_data=easy, stepmin='base+diff')
+    cr = src.cubic_reg.CubicRegularization(x0, f, grad, hess, conv_tol=1e-5, L0=0.01, print_data=easy, stepmin='bifind')
     x_opt, intermediate_points, n_iter, flag = cr.cubic_reg()
     end3 = time.time()
 

@@ -74,7 +74,7 @@ if __name__ == '__main__':
     print('S = ', S, file=fi)
   f, grad, hess = src.createdata.generate_cubic_system(S, Z, num_node, ballance_node, U_0)
   start = time.time()
-  cr = src.cubic_reg.CubicRegularization(x0, f, grad, hess, conv_tol=1e-8, L0=0.1, print_data=easy,
+  cr = src.cubic_reg.CubicRegularization(x0, f, grad, hess, conv_tol=1e-8, L0=0.2, print_data=easy,
                                          stepmin=steptype, epsilon=0.0001)
   x_opt, intermediate_points, n_iter, flag = cr.cubic_reg()
   end = time.time()

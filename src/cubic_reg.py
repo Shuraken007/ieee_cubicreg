@@ -23,7 +23,9 @@ import numpy as np
 import scipy.linalg
 import time
 from scipy.optimize import newton
+import matplotlib.pyplot as plt
 
+im_id = 0
 
 class Algorithm:
     def __init__(self, x0, f=None, gradient=None, hessian=None, L=None, L0=None, kappa_easy=0.0001, maxiter=10000,
@@ -248,9 +250,14 @@ class CubicRegularization(Algorithm):
                 aux_problem = _AuxiliaryProblem(x_old, self.grad_x, self.hess_x, mk, self.lambda_nplus, self.kappa_easy, self.submaxiter, self.stepmin, self.subepsilon)
                 if self.stepmin == 'base':
                     s, flag = aux_problem.solve()
-                elif self.stepmin == 'diff':
+                elif self.stepmin == 'diff' or self.stepmin == 'bifind':
+                    if self.stepmin == "diff":
+                        meth = aux_problem.solve_diff
+                    else:
+                        meth = aux_problem.solve_bifind
+
                     if self.iter >= 1:
-                        s, flag, self.stepmin_diff_x = aux_problem.solve_diff(self.stepmin_diff_x)
+                        s, flag, self.stepmin_diff_x = meth(self.stepmin_diff_x)
                     else:
                         s, flag = aux_problem.solve()
                         I = np.identity(np.size(self.hess_x, 0))
@@ -260,7 +267,12 @@ class CubicRegularization(Algorithm):
                         def x(r): return np.linalg.inv(H + mk * r @ I / 2)@g
                         x0 = (2 * (g - H@x(-s)) / (mk * I@x(-s)))[1]
                         self.stepmin_diff_x = x0
-                elif self.stepmin == "base+diff":
+                elif self.stepmin == "base+diff" or self.stepmin == "base+bifind":
+                    if self.stepmin == "base+diff":
+                        meth = aux_problem.solve_diff
+                    else:
+                        meth = aux_problem.solve_bifind
+
                     self.itertime_s = time.time()
                     if self.iter >= 1 and self.bd_iter_timer > 0 and self.bd_iter_timer_value > 1:
                         s, flag, self.stepmin_diff_x = aux_problem.solve_diff(self.stepmin_diff_x)
@@ -333,6 +345,7 @@ class _AuxiliaryProblem:
         self.epsilon = epsilon
         self.lambda_const = (1 + self.lambda_nplus) * self.epsilon
         self.stepmin = stepmin
+        self.im_id = 0
 
     def _compute_s(self, lambduh):
         """
@@ -345,15 +358,19 @@ class _AuxiliaryProblem:
             L = np.linalg.cholesky(self.H_lambda(lambduh)).T
         except:
             # See p. 516 of Gould et al. (1999) (see reference at top of file)
-            self.lambda_const *= 2
+            # self.lambda_const *= 2
+            k = 0.98
+            corr = np.min(np.linalg.eigvals(self.hess_x))*k
+            if corr < 0:
+                self.lambda_nplus = - corr
             try:
-                s, L = self._compute_s(self.lambda_nplus + self.lambda_const)
+                s, L = self._compute_s(self.lambda_nplus)
             except:
                 # with open('cr_16_node_mode_' + self.stepmin + '.txt', 'a') as fi:
                     # print(self.H_lambda(lambduh), file=fi)
                     # print('{:<28}'.format('eigen vals, hessian(x_opt):'), np.linalg.eig(self.H_lambda(lambduh))[0], file=fi)
                     # print('{:<28}'.format('e_min:'), np.linalg.eig(self.H_lambda(lambduh))[0].min(), file=fi)
-
+                print('Cholesky problems')
                 return np.zeros_like(self.grad_x), [], 1
         s = scipy.linalg.cho_solve((L, False), -self.grad_x)
         return s, L, 0
@@ -384,6 +401,13 @@ class _AuxiliaryProblem:
             return True
         else:
             return False
+
+    def find_min_r(self):
+        k = 0.98
+        corr = np.min(np.linalg.eigvals(self.hess_x))*k
+        r0 = -2*corr/self.M
+        r0 = max(0, r0)
+        return r0
 
     def solve(self):
         """
@@ -420,7 +444,7 @@ class _AuxiliaryProblem:
                 print(RuntimeWarning('Warning: Could not compute s: maximum number of iterations reached'))
         return s, 0
 
-    def solve_diff(self, x0):
+    def solve_diff(self, r0):
         I = np.identity(np.size(self.hess_x, 0))
         H = self.hess_x
         g = self.grad_x
@@ -433,8 +457,35 @@ class _AuxiliaryProblem:
         def diff_x(r): return -M / 2 * (np.linalg.inv(H + M * r * I / 2)).dot(x(r))
 
         def diff_F(r): return 2 * r - 2 * np.sum(x(r).dot(diff_x(r)))
-        result = newton(F_n, x0, fprime=diff_F, args=(), tol=1.48e-08, maxiter=1000)
-        return -x(result), 0, result
+
+        _r0 = self.find_min_r()
+        r0 = max(r0, _r0)
+        # print(r0)
+        r = newton(F_n, r0, fprime=diff_F, args=(), tol=1.48e-06, maxiter=1000)
+
+        # _, _, r1 = self.solve_bifind()
+        # def h(r): return np.linalg.norm(-np.linalg.inv(H + M * r * I / 2)@g)**2
+        # def tau(r): return r**2
+
+        # # a = r0 - (max(r1,r)-r0)*2
+        # # b = r0 + (max(r1,r)-r0)*2
+        # a = r0 - 1
+        # b = r0 + 1
+        # X = np.arange(a, b, (b-a)/1000)
+        # _h = [h(r) for r in X]
+        # _tau = [tau(r) for r in X]
+        # plt.figure()
+        # plt.plot(X, _h, color = 'blue')
+        # plt.plot(X, _tau, color = 'red')
+        # global im_id
+        # im_id += 1
+        # plt.draw()
+        # plt.savefig('graph\\graph' + str(im_id) + '.jpg')
+        # plt.close()
+
+        # print(r**2, r0)
+        # print(r)
+        return -x(r), 0, r
 
     def solve_poly(self):
         I = np.identity(np.size(self.hess_x, 0))
@@ -489,3 +540,50 @@ class _AuxiliaryProblem:
         best_roots_val = np.array(best_roots_val)
 
         return best_roots[best_roots_val.argmin()], 0
+
+    def solve_bifind(self, r0):
+        I = np.identity(np.size(self.hess_x, 0))
+        H = self.hess_x
+        g = self.grad_x
+        M = self.M
+
+        def h(r): return np.linalg.norm(-np.linalg.inv(H + M * r * I / 2)@g)**2
+
+        def tau(r): return r**2
+
+        def x(r): return np.linalg.inv(H + M * r * I / 2)@g
+
+        # def D(r): return g@h(r) + 1 / 2 * (H@h(r))@h(r) + M / 6 * tau(r)**(3 / 2) + M / 4 * r * (np.linalg.norm(h(r))**2 - tau(r))
+        # def D(r): return h(r) - tau(r)
+        r0 = self.find_min_r()
+
+        r, flag = self.bin_search(h, tau, r0)
+        # print(r, r0)
+        return -x(r), flag, r
+
+    def bin_search(self, h, tau, r0, eps = 0.1, step = 2, maxiter = 1000):
+        if tau(r0) > h(r0):
+            return r0, 0
+        a = r0
+        b = a + step
+        iter = 0
+        while tau(b) < h(a) and iter < maxiter:
+            b *= step
+            iter += 1
+        r = (b+a)/2
+        if iter == maxiter:
+            print('wrong tau(b) < h(a)')
+            return r0, 1
+        iter = 0
+        while abs(tau(b) - h(a)) > eps and iter < maxiter:
+            # print(b, a, tau(b) - h(a))
+            if tau(r) > h(r):
+                b = r
+            else:
+                a = r
+            r = (b+a)/2
+            iter += 1
+        if iter == maxiter:
+            print('abs(tau(b) - h(a)) > eps')
+            return r0, 1
+        return r, 0

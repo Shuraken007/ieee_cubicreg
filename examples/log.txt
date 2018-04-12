@@ -1,0 +1,184 @@
+>>>>>>>>>>>sys.path<<<<<<<<<<<<<<
+
+
+
+D:\Development\Projects\ieee_cubicreg\examples
+D:\Development\Projects\ieee_cubicreg
+D:\Development\Python\Anaconda3\python36.zip
+D:\Development\Python\Anaconda3\DLLs
+D:\Development\Python\Anaconda3\lib
+D:\Development\Python\Anaconda3
+D:\Development\Python\Anaconda3\lib\site-packages
+D:\Development\Python\Anaconda3\lib\site-packages\Sphinx-1.6.3-py3.6.egg
+D:\Development\Python\Anaconda3\lib\site-packages\win32
+D:\Development\Python\Anaconda3\lib\site-packages\win32\lib
+D:\Development\Python\Anaconda3\lib\site-packages\Pythonwin
+
+
+
+>>>>>>>>>>>os.environ<<<<<<<<<<<<<<
+
+
+
+PROJECT_NAME
+	ieee-cubicreg.sublime-project
+ADVISOR_2017_DIR
+	D:\Development\C++\Parallel Studio\Advisor 2017\
+OS
+	Windows_NT
+ND_INC
+	D:\Program Files\Microsoft HPC Pack 2008 SDK\Include\
+PROJECT_PATH
+	D:\Development\Projects\ieee_cubicreg
+PROGRAMW6432
+	D:\Program Files
+PATH
+	D:\Development\Python\Anaconda3\Library\bin
+	D:\Development\Python\Python 2\
+	D:\Development\Python\Python 2\Scripts
+	D:\Development\Python\Python 3
+	D:\Development\Python\Python 3\Scripts
+	D:\Development\Python\Anaconda3
+	D:\Development\Python\Anaconda3\Scripts
+	D:\Program Files\ImageMagick-7.0.7-Q16
+	D:\Program Files\Microsoft HPC Pack 2008 SDK\Bin\
+	D:\Development\C++\Parallel Studio\compilers_and_libraries_2017.4.210\windows\mpi\intel64\bin
+	C:\Program Files (x86)\Common Files\Intel\Shared Libraries\redist\intel64_win\mpirt
+	C:\Program Files (x86)\Common Files\Intel\Shared Libraries\redist\ia32_win\mpirt
+	C:\Program Files (x86)\Common Files\Intel\Shared Libraries\redist\intel64_win\compiler
+	C:\Program Files (x86)\Common Files\Intel\Shared Libraries\redist\ia32_win\compiler
+	C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common
+	C:\Windows\system32
+	C:\Windows
+	C:\Windows\System32\Wbem
+	C:\Windows\System32\WindowsPowerShell\v1.0\
+	D:\Program Files\Git\cmd
+	D:\Program Files\PuTTY\
+	D:\Program Files\MySQL\MySQL Server 5.7\bin
+	C:\Windows\system32\config\systemprofile\.dnx\bin
+	D:\Program Files\Microsoft DNX\Dnvm\
+	C:\Program Files (x86)\Windows Kits\8.1\Windows Performance Toolkit\
+	D:\Program Files\Microsoft SQL Server\120\Tools\Binn\
+	D:\Program Files\Microsoft SQL Server\130\Tools\Binn\
+	D:\Program Files\MATLAB\R2015a\runtime\win64
+	D:\Program Files\MATLAB\R2015a\bin
+	D:\Program Files\MATLAB\R2015a\polyspace\bin
+	D:\Program Files\SumatraPDF
+	D:\Program Files\MiKTeX 2.9\miktex\bin\x64\
+	D:\Program Files
+	
+PYTHONPATH
+	D:\Development\Projects\ieee_cubicreg
+TMP
+	D:\SaveHdd\_tmp
+PROCESSOR_IDENTIFIER
+	Intel64 Family 6 Model 60 Stepping 3, GenuineIntel
+I_MPI_ROOT
+	D:\Development\C++\Parallel Studio\compilers_and_libraries_2017.4.210\windows\mpi
+TEMP
+	D:\SaveHdd\_temp
+INTELGTDEBUGGERROOT
+	D:\Development\C++\Parallel Studio\debugger_2017\gdb\intel64_igfx\
+COMPUTERNAME
+	DARK-FORTRESS
+USERNAME
+	Dark Lord
+PROJECT_BASE_NAME
+	ieee-cubicreg
+WINDIR
+	C:\Windows
+HOMEDRIVE
+	C:
+ALLUSERSPROFILE
+	C:\ProgramData
+CCP_LIB32
+	D:\Program Files\Microsoft HPC Pack 2008 SDK\Lib\i386\
+INTEL_DEV_REDIST
+	C:\Program Files (x86)\Common Files\Intel\Shared Libraries\
+COMMONPROGRAMW6432
+	D:\SaveHdd\Common Files
+PROJECT
+	D:\Development\Projects\ieee_cubicreg\ieee-cubicreg.sublime-project
+PROGRAMFILES(X86)
+	D:\Program Files
+PUBLIC
+	C:\Users\Public
+SESSIONNAME
+	Console
+NUMBER_OF_PROCESSORS
+	4
+CCP_SDK
+	D:\Program Files\Microsoft HPC Pack 2008 SDK\
+PACKAGES
+	C:\Users\Dark Lord\AppData\Roaming\Sublime Text 3\Packages
+IFORT_COMPILER17
+	D:\Development\C++\Parallel Studio\compilers_and_libraries_2017.4.210\windows\
+PATHEXT
+	.COM
+	.EXE
+	.BAT
+	.CMD
+	.VBS
+	.VBE
+	.JS
+	.JSE
+	.WSF
+	.WSH
+	.MSC
+	.PYW
+PROCESSOR_ARCHITECTURE
+	AMD64
+PROGRAMDATA
+	C:\ProgramData
+LOGONSERVER
+	\\DARK-FORTRESS
+USERDOMAIN_ROAMINGPROFILE
+	DARK-FORTRESS
+PROCESSOR_REVISION
+	3c03
+ICPP_COMPILER17
+	D:\Development\C++\Parallel Studio\compilers_and_libraries_2017.4.210\windows\
+MIC_LD_LIBRARY_PATH
+	C:\Program Files (x86)\Common Files\Intel\Shared Libraries\compiler\lib\intel64_win_mic
+VTUNE_AMPLIFIER_XE_2017_DIR
+	D:\Development\C++\Parallel Studio\VTune Amplifier XE 2017\
+COMMONPROGRAMFILES
+	D:\SaveHdd\Common Files
+COMSPEC
+	C:\Windows\system32\cmd.exe
+LOCALAPPDATA
+	C:\Users\Dark Lord\AppData\Local
+PROGRAMFILES
+	D:\Program Files
+USERDOMAIN
+	DARK-FORTRESS
+PSMODULEPATH
+	D:\Program Files\WindowsPowerShell\Modules
+	C:\Windows\system32\WindowsPowerShell\v1.0\Modules
+COMMONPROGRAMFILES(X86)
+	D:\SaveHdd\Common Files
+HOMEPATH
+	\Users\Dark Lord
+USERPROFILE
+	C:\Users\Dark Lord
+INSPECTOR_2017_DIR
+	D:\Development\C++\Parallel Studio\Inspector 2017\
+VS140COMNTOOLS
+	C:\Program Files (x86)\Microsoft Visual Studio 14.0\Common7\Tools\
+INTEL_LICENSE_FILE
+	C:\Program Files (x86)\Common Files\\Intel\Licenses
+	C:\Program Files (x86)\Common Files\Intel\Licenses
+PROCESSOR_LEVEL
+	6
+APPDATA
+	C:\Users\Dark Lord\AppData\Roaming
+CCP_LIB64
+	D:\Program Files\Microsoft HPC Pack 2008 SDK\Lib\amd64\
+CCP_INC
+	D:\Program Files\Microsoft HPC Pack 2008 SDK\Include\
+SYSTEMROOT
+	C:\Windows
+ONEDRIVE
+	D:\SaveHdd\OneDrive
+SYSTEMDRIVE
+	C:

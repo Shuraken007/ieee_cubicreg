@@ -4,6 +4,26 @@
 		"selected_items":
 		[
 			[
+				"find",
+				"find_min_r"
+			],
+			[
+				"im",
+				"im_id"
+			],
+			[
+				"sol",
+				"solve_bifind"
+			],
+			[
+				"p_",
+				"p_left"
+			],
+			[
+				"test",
+				"test_f"
+			],
+			[
 				"polar",
 				"polar_H"
 			]
@@ -12,45 +32,54 @@
 	"buffers":
 	[
 		{
-			"file": "examples/test_polar.py",
-			"settings":
-			{
-				"buffer_size": 394,
-				"encoding": "UTF-8",
-				"line_ending": "Windows"
-			}
-		},
-		{
 			"file": "examples/cr_3_node.py",
 			"settings":
 			{
-				"buffer_size": 2601,
+				"buffer_size": 3253,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "src/createdata.py",
+			"file": "examples/cr_16_node.py",
 			"settings":
 			{
-				"buffer_size": 5649,
+				"buffer_size": 5239,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "result/cr_3_node_base.txt",
+			"file": "result/cr_16_node_base+diff.txt",
 			"settings":
 			{
-				"buffer_size": 1222,
+				"buffer_size": 34726,
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "result/cr_3_node_polar_base.txt",
+			"file": "examples/cr_16_node_test_time.py",
 			"settings":
 			{
-				"buffer_size": 1313,
+				"buffer_size": 3719,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "examples/time-j.txt",
+			"settings":
+			{
+				"buffer_size": 2015,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "examples/graphs.py",
+			"settings":
+			{
+				"buffer_size": 2462,
+				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
 		},
@@ -58,24 +87,7 @@
 			"file": "src/cubic_reg.py",
 			"settings":
 			{
-				"buffer_size": 23261,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "test/test.py",
-			"settings":
-			{
-				"buffer_size": 352,
-				"encoding": "UTF-8",
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "test/numpy_mul_rules.py",
-			"settings":
-			{
-				"buffer_size": 1011,
+				"buffer_size": 26231,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
@@ -105,16 +117,124 @@
 	"command_palette":
 	{
 		"height": 357.0,
-		"last_filter": "insta",
+		"last_filter": "",
 		"selected_items":
 		[
+			[
+				"repl:py",
+				"SublimeREPL: Python3 Anaconda"
+			],
+			[
+				"packa",
+				"Package Control: List Packages"
+			],
+			[
+				"sync",
+				"Sync Settings: Upload"
+			],
+			[
+				"repl:p",
+				"SublimeREPL: Python3 Anaconda"
+			],
+			[
+				"replpy3ana-r",
+				"SublimeREPL: Python3 Anaconda - RUN current file"
+			],
+			[
+				"readme",
+				"ReadmePlease"
+			],
+			[
+				"reppy3ar",
+				"SublimeREPL: Python3 Anaconda - RUN current file"
+			],
+			[
+				"replpy3a-r",
+				"SublimeREPL: Python3 Anaconda - RUN current file"
+			],
 			[
 				"insta",
 				"Package Control: Install Package"
 			],
 			[
+				"remove",
+				"Package Control: Remove Package"
+			],
+			[
+				"repl:py3ana-r",
+				"SublimeREPL: Python3 Anaconda - RUN current file"
+			],
+			[
+				"replpyth3-r",
+				"SublimeREPL: Python3 - RUN current file"
+			],
+			[
+				"replpyth3anar",
+				"SublimeREPL: Python3 Anaconda - RUN current file"
+			],
+			[
+				"repl:pytho3ana",
+				"SublimeREPL: Python3 Anaconda"
+			],
+			[
+				"repl:pytho3ana-r",
+				"SublimeREPL: Python3 Anaconda - RUN current file"
+			],
+			[
+				"repl:pth3ana-r",
+				"SublimeREPL: Python3 Anaconda - RUN current file"
+			],
+			[
+				"repl:python3 ana",
+				"SublimeREPL: Python3 Anaconda - RUN current file"
+			],
+			[
+				"sublimeRepl:Python",
+				"SublimeREPL: Python - execnet"
+			],
+			[
 				"repl",
 				"SublimeREPL: Python"
+			],
+			[
+				"rea",
+				"ReadmePlease"
+			],
+			[
+				"read",
+				"ReadmePlease"
+			],
+			[
+				"pac:",
+				"Package Control: List Packages"
+			],
+			[
+				"virt",
+				"Virtualenv: Activate"
+			],
+			[
+				"virtual",
+				"Virtualenv: Activate"
+			],
+			[
+				"remove ",
+				"Package Control: Remove Package"
+			],
+			[
+				"vir",
+				"Virtualenv: Add directory"
+			],
+			[
+				"install ",
+				"Package Control: Install Package"
+			],
+			[
+				"inst",
+				"Package Control: Install Package"
+			],
+			[
+				"rem",
+				"Package Control: Remove Package"
 			],
 			[
 				"git: ",
@@ -133,10 +253,6 @@
 				"SublimeREPL: Restart REPL"
 			],
 			[
-				"sync",
-				"Sync Settings: Upload"
-			],
-			[
 				"prefences: linter",
 				"Preferences: SublimeLinter Settings – User"
 			],
@@ -149,10 +265,6 @@
 				"Package Control: Install Package"
 			],
 			[
-				"remove",
-				"Package Control: Remove Package"
-			],
-			[
 				"prefs",
 				"Preferences: SublimeLinter Settings – User"
 			],
@@ -163,14 +275,6 @@
 			[
 				"remo",
 				"Package Control: Remove Package"
-			],
-			[
-				"remove ",
-				"Package Control: Remove Package"
-			],
-			[
-				"read",
-				"ReadmePlease"
 			],
 			[
 				"re",
@@ -187,10 +291,6 @@
 			[
 				"con",
 				"Conda: Activate Environment"
-			],
-			[
-				"rea",
-				"ReadmePlease"
 			],
 			[
 				"gitg",
@@ -231,23 +331,25 @@
 			[
 				"task: ",
 				"Tasks: New document"
-			],
-			[
-				"install ",
-				"Package Control: Install Package"
-			],
-			[
-				"rem",
-				"Package Control: Remove Package"
 			]
 		],
-		"width": 382.0
+		"width": 422.0
 	},
 	"console":
 	{
 		"height": 200.0,
 		"history":
 		[
+			"12",
+			"sublime.log_commands(True)",
+			"sublime.log_commands(False)",
+			"sublime.log_commands(True)",
+			"12",
+			"reload",
+			"print",
+			"exit",
+			"clear",
+			"12",
 			"import socket; socket.socket(socket.AF_INET, socket.SOCK_STREAM).connect((\"localhost\", 56967))",
 			"cp ~/Library/Application\\ Support/Sublime\\ Text\\ 2/Packages/PlainTasks/icons/TODO.icns /Applications/Sublime\\ Text\\ 2.app/Contents/Resources/"
 		]
@@ -266,18 +368,96 @@
 		"/D/Development/Projects/ieee_cubicreg",
 		"/D/Development/Projects/ieee_cubicreg/examples",
 		"/D/Development/Projects/ieee_cubicreg/result",
-		"/D/Development/Projects/ieee_cubicreg/src",
-		"/D/Development/Projects/ieee_cubicreg/test",
-		"/D/Development/Projects/ieee_cubicreg/test/__pycache__"
+		"/D/Development/Projects/ieee_cubicreg/test"
 	],
 	"file_history":
 	[
+		"/D/Development/Projects/ieee_cubicreg/examples/graph.png",
+		"/D/SaveHdd/Desktop/Отчёт/16 -400j/cr_16_node_base.txt",
+		"/D/SaveHdd/Desktop/Отчёт/16 -400j/cr_16_node_diff.txt",
+		"/D/SaveHdd/Desktop/Отчёт/16 -400j/cr_16_node_bifind.txt",
+		"/D/Development/Projects/ieee_cubicreg/result/cr_3_node_polar_base.txt",
+		"/D/Development/Projects/ieee_cubicreg/result/cr_3_node_polar_bifind.txt",
+		"/D/Development/Projects/ieee_cubicreg/result/cr_3_node_polar_diff.txt",
+		"/D/Development/Projects/ieee_cubicreg/examples/time+.txt",
+		"/D/Development/Projects/ieee_cubicreg/examples/graphs.py",
+		"/D/Development/Python/Anaconda3/lib/site-packages/scipy/optimize/zeros.py",
+		"/D/SaveHdd/Desktop/Отчёт/16 -400j/cr_16_node_base+diff.txt",
+		"/D/SaveHdd/Desktop/Отчёт/16 -400j/cr_16_node_base+bifind.txt",
+		"/D/Development/Projects/ieee_cubicreg/src/cubic_reg.py",
+		"/D/Development/Projects/ieee_cubicreg/examples/time-.txt",
+		"/D/Development/Projects/ieee_cubicreg/examples/time+j.txt",
 		"/D/Development/Projects/ieee_cubicreg/examples/time-j.txt",
-		"/D/TORRENT/установочные пакеты/Программы/KMPlayer-4.2.1.4-RePack/Особенности сборки/Ключи тихой установки.txt",
+		"/D/Development/Projects/ieee_cubicreg/src/createdata.py",
+		"/D/Development/Projects/ieee_cubicreg/result/cr_16_node_base.txt",
+		"/D/Development/Projects/ieee_cubicreg/examples/time.txt",
+		"/D/Development/Projects/ieee_cubicreg/result/cr_16_node_diff.txt",
+		"/D/Development/Projects/ieee_cubicreg/result/cr_16_node_bifind.txt",
+		"/D/Development/Projects/ieee_cubicreg/examples/cr_16_node.py",
+		"/D/Development/Projects/ieee_cubicreg/result/cr_16_node_poly.txt",
+		"/D/Development/Projects/ieee_cubicreg/examples/graph/graph0.jpg",
+		"/D/Development/Projects/ieee_cubicreg/result/cr_16_node_base+bifind.txt",
+		"/D/Development/Projects/ieee_cubicreg/examples/cr_3_node.py",
+		"/D/Development/Projects/ieee_cubicreg/examples/cr_16_node_test_time.py",
+		"/D/Development/Projects/ieee_cubicreg/test/some_data_from_tests",
+		"/D/Development/Projects/ieee_cubicreg/result/cr_16_node_base+diff.txt",
+		"/D/Development/Projects/ieee_cubicreg/result/cr_3_node_polar_base+bifind.txt",
+		"/D/Development/Projects/ieee_cubicreg/ieee-cubicreg.sublime-project",
+		"/C/Users/Dark Lord/AppData/Roaming/Sublime Text 3/Packages/User/EnvironmentSettings.sublime-settings",
+		"/C/Users/Dark Lord/AppData/Roaming/Sublime Text 3/Packages/User/Python3 - Anaconda.sublime-build",
+		"/C/Users/Dark Lord/AppData/Roaming/Sublime Text 3/Packages/User/Python3 - Anaconda - Repl.sublime-build",
+		"/C/Users/Dark Lord/AppData/Roaming/Sublime Text 3/Packages/User/Python3.sublime-build",
+		"/C/Users/Dark Lord/AppData/Roaming/Sublime Text 3/Packages/SublimeREPL/config/Python/Main.sublime-menu",
+		"/C/Users/Dark Lord/AppData/Roaming/Sublime Text 3/Packages/SublimeREPL/config/Python/Default.sublime-commands",
+		"/C/Users/Dark Lord/AppData/Roaming/Sublime Text 3/Packages/SublimeREPL/config/Sublime/Default.sublime-commands",
+		"/C/Users/Dark Lord/AppData/Roaming/Sublime Text 3/Packages/SublimeREPL/SublimeREPL.sublime-settings",
+		"/C/Users/Dark Lord/AppData/Roaming/Sublime Text 3/Packages/User/SublimeREPL.sublime-settings",
+		"/C/Users/Dark Lord/AppData/Roaming/Sublime Text 3/Packages/SublimeREPL/config/Python/ipy_repl.py",
+		"/C/Users/Dark Lord/AppData/Roaming/Sublime Text 3/Packages/EnvironmentSettings/EnvironmentSettings.sublime-settings",
+		"/C/Users/Dark Lord/AppData/Roaming/Sublime Text 3/Packages/LaTeXTools/change_environment.py",
+		"/C/Users/Dark Lord/AppData/Roaming/Sublime Text 3/Packages/LaTeXTools/LaTeX.sublime-commands",
+		"/C/Users/Dark Lord/AppData/Roaming/Sublime Text 3/Packages/python-jinja2/all/jinja2/environment.py",
+		"/C/Users/Dark Lord/AppData/Roaming/Sublime Text 3/Packages/User/Python2 - Anaconda.sublime-build",
+		"/C/Users/Dark Lord/AppData/Roaming/Sublime Text 3/Packages/User/Python2.sublime-build",
+		"/C/Users/Dark Lord/AppData/Roaming/Sublime Text 3/Packages/User/PythonTestRunner.last-run",
+		"/C/Users/Dark Lord/AppData/Roaming/Sublime Text 3/Packages/Environment Settings/README.md",
+		"/D/Development/Projects/ieee_cubicreg/examples/log.txt",
+		"/C/Users/Dark Lord/AppData/Roaming/Sublime Text 3/Packages/User/Package Control.sublime-settings",
+		"/C/Users/Dark Lord/AppData/Roaming/Sublime Text 3/Packages/User/SyncSettings.sublime-settings",
+		"/C/Users/Dark Lord/AppData/Roaming/Sublime Text 3/Packages/Virtualenv/README.md",
+		"/D/Development/Projects/ieee_cubicreg/200bus/convert.m",
+		"/D/Development/Projects/ieee_cubicreg/test/test.py",
+		"/D/eula.1028.txt",
+		"/C/Users/Dark Lord/AppData/Roaming/Sublime Text 3/Packages/User/Matlab.sublime-settings",
+		"/C/Users/Dark Lord/AppData/Roaming/Sublime Text 3/Packages/User/Matlab.sublime-build",
+		"/D/Development/Projects/ieee_cubicreg/Bus Data Format",
+		"/D/Development/Projects/ieee_cubicreg/200bus/case_ACTIVSg200.m",
+		"/D/SaveHdd/Desktop/matpower6.0/README.txt",
+		"/D/Program Files/MATLAB/matpower6.0/docs/CHANGES.txt",
+		"/D/Development/Projects/ieee_cubicreg/200bus/test.py",
+		"/D/Development/Projects/ieee_cubicreg/200bus/regular_replaces.txt",
+		"/D/Development/Projects/ieee_cubicreg/200bus/case_ACTIVSg200.py",
+		"/D/SaveHdd/Desktop/Текучка/Диплом/MatlabDiplom/cr_2_node.m",
+		"/D/TORRENT/установочные пакеты/Программы/Mathworks Matlab R2015a для (64-Bit) и (32-Bit)/Как устоновить.txt",
+		"/D/Development/Python/Anaconda3/Lib/site-packages/pypower/case9.py",
+		"/D/SaveHdd/Desktop/200bus/test.py",
+		"/D/Development/Python/Anaconda3/Lib/site-packages/pypower/t/test_pypower.py",
+		"/D/Development/Python/Anaconda3/Lib/site-packages/pypower/t/t_loadcase.py",
+		"/D/Development/Python/Anaconda3/lib/site-packages/pypower/__init__.py",
+		"/D/Development/Projects/ieee_cubicreg/test/numpy_mul_rules.py",
+		"/D/SaveHdd/Desktop/200bus/ACTIVSg200.EPC",
 		"/D/Development/Projects/ieee_cubicreg/result/cr_3_node_base.txt",
+		"/D/Development/Projects/ieee_cubicreg/examples/test_polar.py",
+		"/D/SaveHdd/Desktop/200bus/case_ACTIVSg200.m",
+		"/C/Users/Dark Lord/AppData/Roaming/Sublime Text 3/Packages/Anaconda/Anaconda.sublime-settings",
+		"/C/Users/Dark Lord/AppData/Roaming/Sublime Text 3/Packages/User/Anaconda.sublime-settings",
+		"/D/Development/Python/Anaconda3/lib/site-packages/sympy/polys/numberfields.py",
+		"/D/Development/Python/Anaconda3/lib/site-packages/sympy/core/__init__.py",
+		"/D/Development/Projects/ieee_cubicreg/examples/example.py",
+		"/D/Development/Python/Anaconda3/lib/site-packages/sympy/core/symbol.py",
+		"/D/TORRENT/установочные пакеты/Программы/KMPlayer-4.2.1.4-RePack/Особенности сборки/Ключи тихой установки.txt",
 		"/D/Development/Projects/ieee_cubicreg/result/cr_3_nodebase.txt",
 		"/D/Development/Projects/ieee_cubicreg/result/cr_3_node_Nonefirst.txt",
-		"/D/Development/Projects/ieee_cubicreg/src/cubic_reg.py",
 		"/D/Development/Projects/ieee_cubicreg/examples/cr_14_node_polar.py",
 		"/D/Development/Projects/ieee_cubicreg/result/cr_3_node_polarbase.txt",
 		"/D/Development/Projects/ieee_cubicreg/result/cr_3_node_base_polar.txt",
@@ -290,18 +470,7 @@
 		"/D/TORRENT/установочные пакеты/Программы/Visual Studio 2015 MSDN/key.txt",
 		"/C/Users/Dark Lord/AppData/Local/Frontier_Developments/specs.xml",
 		"/D/Development/Projects/ieee_cubicreg/examples/cr_16_node_test.py",
-		"/D/Development/Projects/ieee_cubicreg/examples/cr_16_node.py",
-		"/D/Development/Projects/ieee_cubicreg/test/test.py",
-		"/D/Development/Projects/ieee_cubicreg/examples/time+.txt",
-		"/D/Development/Projects/ieee_cubicreg/examples/time-.txt",
-		"/D/Development/Projects/ieee_cubicreg/examples/time+j.txt",
-		"/D/Development/Projects/ieee_cubicreg/examples/cr_16_node_test_time.py",
-		"/D/Development/Projects/ieee_cubicreg/examples/graphs.py",
-		"/D/Development/Projects/ieee_cubicreg/examples/time.txt",
-		"/D/Development/Projects/ieee_cubicreg/src/createdata.py",
-		"/D/Development/Projects/ieee_cubicreg/examples/cr_3_node.py",
 		"/D/Development/Projects/ieee_cubicreg/src/easy_print.py",
-		"/D/Development/Projects/ieee_cubicreg/result/cr_16_node_base.txt",
 		"/D/SaveHdd/_tmp/Temp1_result (1).zip/result/cr_16_node_test_0.01_-S_second.txt",
 		"/D/Development/Projects/ieee_cubicreg/result/cr_16_node_test_0.01_+S_base.txt",
 		"/D/Development/Projects/ieee_cubicreg/result/cr_16_node_test_0.01_+S_diff.txt",
@@ -309,7 +478,6 @@
 		"/D/SaveHdd/_tmp/Temp1_result (1).zip/result/cr_16_node_test_0.01_-S_first.txt",
 		"/D/Development/Projects/ieee_cubicreg/result/cr_3_node_diff.txt",
 		"/D/Development/Projects/ieee_cubicreg/src/test.txt",
-		"/D/Development/Projects/ieee_cubicreg/test/numpy_mul_rules.py",
 		"/D/Development/Projects/ieee_cubicreg/examples/test.py",
 		"/D/Development/Projects/ieee_cubicreg/examples/test1.py",
 		"/D/Development/Projects/ieee_cubicreg/test/__pycache__/test.cpython-36.pyc",
@@ -329,78 +497,100 @@
 		"/D/SaveHdd/Downloads/edu-cmc-skmodel17-611-22.txt",
 		"/D/SaveHdd/Downloads/edu-cmc-skmodel17-611-22 (1).txt",
 		"/D/Program Files/Steam/steamapps/common/Dawn of War Gold/Local.ini",
-		"/D/Development/Projects/ieee_cubicreg/examples/example.py",
 		"/D/Development/Python/Anaconda3/lib/site-packages/numpy/core/numeric.py",
 		"/D/SaveHdd/Desktop/Спорт/Питание",
-		"/D/SaveHdd/Desktop/ToDo/ToDo",
-		"/D/SaveHdd/Desktop/ToDo/HotKeys.todo",
-		"/C/Users/Dark Lord/AppData/Roaming/Sublime Text 3/Packages/User/Python3 - Anaconda.sublime-build",
-		"/D/Development/Projects/Sublime-proj/ieee_cubicreg.sublime-project",
-		"/D/Development/Projects/ieee_cubicreg/src/__init__.py",
-		"/C/Users/Dark Lord/AppData/Roaming/Sublime Text 3/Packages/User/SublimeLinter.sublime-settings",
-		"/C/Users/Dark Lord/AppData/Roaming/Sublime Text 3/Packages/User/Anaconda.sublime-settings",
-		"/C/Users/Dark Lord/AppData/Roaming/Sublime Text 3/Packages/Anaconda/Anaconda.sublime-settings",
-		"/C/Users/Dark Lord/AppData/Roaming/Sublime Text 3/Packages/SublimeLinter/SublimeLinter.sublime-settings",
-		"/C/Users/Dark Lord/AppData/Roaming/Sublime Text 3/Packages/SublimeREPL/config/Python/Main.sublime-menu",
-		"/C/Users/Dark Lord/AppData/Roaming/Sublime Text 3/Packages/SublimeLinter-pep8/README.md",
-		"/C/Users/Dark Lord/AppData/Roaming/Sublime Text 3/Packages/SublimeLinter/README.md",
-		"/C/Users/Dark Lord/AppData/Roaming/Sublime Text 3/Packages/AceJump/README.md",
-		"/C/Users/Dark Lord/AppData/Roaming/Sublime Text 3/Packages/AceJump/Default (Windows).sublime-keymap",
-		"/C/Users/Dark Lord/AppData/Roaming/Sublime Text 3/Packages/EasyMotion/README.md",
-		"/C/Users/Dark Lord/AppData/Roaming/Sublime Text 3/Packages/EasyMotion/EasyMotion.sublime-settings",
-		"/C/Users/Dark Lord/AppData/Roaming/Sublime Text 3/Packages/User/Python3 - Anaconda - Repl.sublime-build",
-		"/D/SaveHdd/saveрабстол/cubic_reg-master/examples/cr_16_node.py",
-		"/C/Users/Dark Lord/AppData/Roaming/Sublime Text 3/Packages/User/Python2 - Anaconda.sublime-build",
-		"/D/SaveHdd/_tmp/moder_ban.txt",
-		"/C/Users/Dark Lord/AppData/Roaming/Sublime Text 3/Packages/GitGutter/README.md",
-		"/C/Users/Dark Lord/AppData/Roaming/Sublime Text 3/Packages/PlainTasks/Readme.md",
-		"/C/Users/Dark Lord/AppData/Roaming/Sublime Text 3/Packages/User/GitSavvy.sublime-settings",
-		"/C/Users/Dark Lord/AppData/Roaming/Sublime Text 3/Packages/User/SideBarEnhancements/Open With/Side Bar.sublime-menu",
-		"/D/Development/Projects/cubic_reg-master/src/test.txt",
-		"/C/Users/Dark Lord/AppData/Roaming/Sublime Text 3/Packages/GitSavvy/GitSavvy.sublime-settings",
-		"/C/Users/Dark Lord/AppData/Roaming/Sublime Text 3/Packages/User/Preferences.sublime-settings",
-		"/C/Users/Dark Lord/AppData/Roaming/Sublime Text 3/Packages/Default/Preferences.sublime-settings",
-		"/C/Users/Dark Lord/AppData/Roaming/Sublime Text 3/Packages/Sync Settings/README.md",
-		"/C/Users/Dark Lord/AppData/Roaming/Sublime Text 3/Packages/User/SyncSettings.sublime-settings",
-		"/C/Users/Dark Lord/AppData/Roaming/Sublime Text 3/Packages/Sync Settings/SyncSettings.sublime-settings",
-		"/C/Users/Dark Lord/AppData/Roaming/Sublime Text 3/Packages/User/Side Bar.sublime-settings",
-		"/D/TORRENT/установочные пакеты/Программы/Sublime Text 3 Build 3126/Lynda - Learn Sublime Text 3 - The Basics/Exercise Files/roux_website/error.htm",
-		"/D/TORRENT/установочные пакеты/Программы/Sublime Text 3 Build 3126/Lynda - Learn Sublime Text 3 - The Basics/Exercise Files/roux_website/404.shtml",
-		"/D/TORRENT/установочные пакеты/Программы/Sublime Text 3 Build 3126/Lynda - Learn Sublime Text 3 - The Basics/Exercise Files/roux_website/403.shtml",
-		"/D/TORRENT/установочные пакеты/Программы/Sublime Text 3 Build 3126/Lynda - Learn Sublime Text 3 - The Basics/Exercise Files/roux_website/asdasd",
-		"/C/Users/Dark Lord/AppData/Roaming/Sublime Text 3/Packages/SideBarEnhancements/Side Bar.sublime-settings",
-		"/C/Users/Dark Lord/AppData/Roaming/Sublime Text 3/Packages/HyperlinkHelper/README.md",
-		"/C/Users/Dark Lord/AppData/Roaming/Sublime Text 3/Packages/A File Icon/README.md",
-		"/D/TORRENT/установочные пакеты/Программы/Sublime Text 3 Build 3126/Lynda - Learn Sublime Text 3 - The Basics/Exercise Files/roux_website/index.htm",
-		"/D/TORRENT/установочные пакеты/Программы/Sublime Text 3 Build 3126/Lynda - Learn Sublime Text 3 - The Basics/Exercise Files/roux_website2/_css/main.css",
-		"/D/TORRENT/установочные пакеты/Программы/Sublime Text 3 Build 3126/Lynda - Learn Sublime Text 3 - The Basics/Exercise Files/roux_website/_css/main.css",
-		"/D/TORRENT/установочные пакеты/Программы/Sublime Text 3 Build 3126/Lynda - Learn Sublime Text 3 - The Basics/Exercise Files/roux_website/_scripts/SpryTabbedPanels.js",
-		"/D/TORRENT/установочные пакеты/Программы/Sublime Text 3 Build 3126/Lynda - Learn Sublime Text 3 - The Basics/Exercise Files/roux_website2/_scripts/SpryTabbedPanels.css",
-		"/D/SaveHdd/_tmp/Temp1_В.Н.Пильщиков-Язык_макроассемблера_IBM_PC.zip/В.Н.Пильщиков-Язык_макроассемблера_IBM_PC.txt",
-		"/D/TORRENT/установочные пакеты/Программы/Sublime Text 3 Build 3126/Lynda - Learn Sublime Text 3 - The Basics/Exercise Files/roux_website/_scripts/SpryTabbedPanels.css",
-		"/D/TORRENT/установочные пакеты/Программы/Sublime Text 3 Build 3126/Lynda - Learn Sublime Text 3 - The Basics/Exercise Files/roux_website/admissions/request.htm",
-		"/C/Users/Dark Lord/AppData/Roaming/Sublime Text 3/Packages/PlainTasks/messages/Tutorial.todo",
-		"/D/TORRENT/установочные пакеты/Программы/Sublime Text 3 Build 3126/Lynda - Learn Sublime Text 3 - The Basics/001 Welcome.mp4",
-		"/D/SaveHdd/Desktop/ToDo/Hotkeys",
-		"/D/TORRENT/установочные пакеты/Программы/Sublime Text 3 Build 3126/Key.txt"
+		"/D/SaveHdd/Desktop/ToDo/ToDo"
 	],
 	"find":
 	{
-		"height": 44.0
+		"height": 45.0
 	},
 	"find_in_files":
 	{
-		"height": 90.0,
+		"height": 123.0,
 		"where_history":
 		[
+			"D:\\Development\\Python\\Anaconda3\\Lib\\site-packages\\pypower",
 			""
 		]
 	},
 	"find_state":
 	{
-		"case_sensitive": false,
+		"case_sensitive": true,
 		"find_history":
 		[
+			"solve_diff",
+			"print(",
+			"lambduh",
+			"self.x(r)",
+			"fprime",
+			"x(r)",
+			"x(",
+			"diff_x",
+			"diff_F",
+			"point(",
+			"self.grad_x",
+			"elf.grad_x",
+			"self.hess_x",
+			"H",
+			"print",
+			"print(",
+			"solve_bifind",
+			"r_0",
+			"im_id",
+			"solve_poly",
+			"solve(",
+			"solve",
+			"'base'",
+			"solve_diff",
+			"'base'",
+			"solve_bifind",
+			"solve_diff",
+			"solve_bifind",
+			"_run",
+			"open",
+			"repl_python_run",
+			"\"file_basename",
+			"file_basename",
+			"3_anaconda",
+			"Anaconda3",
+			"_3",
+			"Python 3",
+			"_2",
+			"Python 2",
+			"D:\\\\Development\\\\Python\\\\Anaconda3\\\\python",
+			"\"id\"",
+			"repl_python",
+			"type",
+			"python_virtualenv_repl",
+			"pythonp",
+			"ieee_",
+			"python",
+			"ieee_cubicreg",
+			"pythonp",
+			"w",
+			"makeYbus",
+			"shift",
+			"tap",
+			"run",
+			"loadcase",
+			"gentype",
+			"genfuel",
+			"gentype",
+			"\t",
+			"= \\[",
+			"= [",
+			"\\];",
+			"\\,\\]",
+			"^\\s+(.+);",
+			"(\\-*\\d+[\\.]*\\d*)",
+			"%",
+			"del",
+			"de",
+			"loadcase",
+			"t_loadcase",
+			"warnin",
+			"import",
 			"approx_hess",
 			"None",
 			"F_min",
@@ -461,6 +651,28 @@
 		"regex": false,
 		"replace_history":
 		[
+			"self.x(self, r)",
+			"self.x(r)",
+			"self.g",
+			"self.H",
+			"r0",
+			"\"$file_basename",
+			"$file_basename",
+			"2_anaconda",
+			"Anaconda2",
+			"_3_anaconda",
+			"Anaconda3",
+			"_3",
+			"Python 3",
+			"D:\\\\Development\\\\Python\\\\Python 2\\\\python",
+			"\\t",
+			"= array([",
+			"])",
+			"]",
+			"\\t[\\1],",
+			"[\\1],",
+			"\\1,",
+			"#",
 			"",
 			":]",
 			"x.size // 2",
@@ -486,52 +698,19 @@
 			[
 				{
 					"buffer": 0,
-					"file": "examples/test_polar.py",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 394,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								393,
-								393
-							]
-						],
-						"settings":
-						{
-							"git_gutter_is_enabled": true,
-							"git_savvy.repo_path": "D:\\Development\\Projects\\ieee_cubicreg",
-							"open_with_edit": true,
-							"syntax": "Packages/Python/Python.sublime-syntax",
-							"tab_size": 3,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 108.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 0,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
 					"file": "examples/cr_3_node.py",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 2601,
+						"buffer_size": 3253,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								130,
-								605
+								1341,
+								1341
 							]
 						],
 						"settings":
@@ -543,7 +722,39 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 594.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "examples/cr_16_node.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 5239,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								3459,
+								3459
+							]
+						],
+						"settings":
+						{
+							"git_gutter_is_enabled": true,
+							"git_savvy.repo_path": "D:\\Development\\Projects\\ieee_cubicreg",
+							"syntax": "Packages/Python/Python.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 918.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 2,
@@ -551,31 +762,31 @@
 				},
 				{
 					"buffer": 2,
-					"file": "src/createdata.py",
+					"file": "result/cr_16_node_base+diff.txt",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 5649,
+						"buffer_size": 34726,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								2807,
-								2807
+								0,
+								0
 							]
 						],
 						"settings":
 						{
 							"git_gutter_is_enabled": true,
 							"git_savvy.repo_path": "D:\\Development\\Projects\\ieee_cubicreg",
-							"syntax": "Packages/Python/Python.sublime-syntax",
+							"syntax": "Packages/Text/Plain text.tmLanguage",
 							"tab_size": 4,
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 432.0,
+						"translation.y": 1125.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 1,
@@ -583,49 +794,51 @@
 				},
 				{
 					"buffer": 3,
-					"file": "result/cr_3_node_base.txt",
+					"file": "examples/cr_16_node_test_time.py",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1222,
+						"buffer_size": 3719,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
-								0
+								3662,
+								3662
 							]
 						],
 						"settings":
 						{
 							"git_gutter_is_enabled": true,
 							"git_savvy.repo_path": "D:\\Development\\Projects\\ieee_cubicreg",
-							"syntax": "Packages/Text/Plain text.tmLanguage"
+							"syntax": "Packages/Python/Python.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 701.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 4,
+					"stack_index": 6,
 					"type": "text"
 				},
 				{
 					"buffer": 4,
-					"file": "result/cr_3_node_polar_base.txt",
+					"file": "examples/time-j.txt",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1313,
+						"buffer_size": 2015,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
-								0
+								908,
+								908
 							]
 						],
 						"settings":
@@ -635,27 +848,63 @@
 							"syntax": "Packages/Text/Plain text.tmLanguage"
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 270.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 5,
 					"type": "text"
 				},
 				{
+					"file": "examples/graph.png",
+					"semi_transient": false,
+					"stack_index": 3,
+					"type": "image"
+				},
+				{
 					"buffer": 5,
-					"file": "src/cubic_reg.py",
-					"semi_transient": true,
+					"file": "examples/graphs.py",
+					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 23261,
+						"buffer_size": 2462,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								6651,
-								7219
+								1415,
+								1415
+							]
+						],
+						"settings":
+						{
+							"git_gutter_is_enabled": true,
+							"git_savvy.repo_path": "D:\\Development\\Projects\\ieee_cubicreg",
+							"syntax": "Packages/Python/Python.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 162.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "src/cubic_reg.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 26231,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								14244,
+								14244
 							]
 						],
 						"settings":
@@ -666,77 +915,11 @@
 							"tab_size": 4,
 							"translate_tabs_to_spaces": true
 						},
-						"translation.x": -0.0,
-						"translation.y": 1916.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 3,
-					"type": "text"
-				}
-			]
-		},
-		{
-			"selected": 1,
-			"sheets":
-			[
-				{
-					"buffer": 6,
-					"file": "test/test.py",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 352,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								18,
-								18
-							]
-						],
-						"settings":
-						{
-							"git_gutter_is_enabled": true,
-							"git_savvy.repo_path": "D:\\Development\\Projects\\ieee_cubicreg",
-							"syntax": "Packages/Python/Python.sublime-syntax"
-						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 4607.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 7,
-					"type": "text"
-				},
-				{
-					"buffer": 7,
-					"file": "test/numpy_mul_rules.py",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1011,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1010,
-								967
-							]
-						],
-						"settings":
-						{
-							"git_gutter_is_enabled": true,
-							"git_savvy.repo_path": "D:\\Development\\Projects\\ieee_cubicreg",
-							"syntax": "Packages/Python/Python.sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 335.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 6,
 					"type": "text"
 				}
 			]
@@ -759,18 +942,11 @@
 				0,
 				1,
 				1
-			],
-			[
-				1,
-				0,
-				2,
-				1
 			]
 		],
 		"cols":
 		[
 			0.0,
-			0.701166180758,
 			1.0
 		],
 		"rows":
@@ -784,13 +960,25 @@
 	{
 		"height": 77.0
 	},
+	"output.SublimeLinter":
+	{
+		"height": 0.0
+	},
+	"output.SublimeLinter Messages":
+	{
+		"height": 118.0
+	},
 	"output.exec":
 	{
-		"height": 272.0
+		"height": 169.0
 	},
 	"output.find_results":
 	{
-		"height": 389.0
+		"height": 252.0
+	},
+	"output.latextools":
+	{
+		"height": 118.0
 	},
 	"output.mdpopups":
 	{
@@ -800,7 +988,7 @@
 	"project": "ieee-cubicreg.sublime-project",
 	"replace":
 	{
-		"height": 82.0
+		"height": 84.0
 	},
 	"save_all_on_build": true,
 	"select_file":
@@ -840,7 +1028,7 @@
 		[
 			[
 				"",
-				"D:\\Development\\Projects\\Sublime-proj\\ServerTranslation.sublime-project"
+				"D:\\Development\\Projects\\Sublime-proj\\GMR.sublime-project"
 			]
 		],
 		"width": 608.0
@@ -861,12 +1049,21 @@
 	"selected_group": 0,
 	"settings":
 	{
+		"last_automatic_layout":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		]
 	},
 	"show_minimap": true,
 	"show_open_files": false,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 205.0,
+	"side_bar_width": 245.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{
