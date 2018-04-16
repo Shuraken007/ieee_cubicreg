@@ -40,13 +40,13 @@ class easy_print:
                 if not self.phases[temp_phase]['data'].get(i):
                     self.phases[temp_phase]['data'][i] = {}
                 self.phases[temp_phase]['data'][i]['var'] = self.default_type_print.get(type(i))
-                self.phases[temp_phase]['data'][i]['len'] = len(str(i))
+                self.phases[temp_phase]['data'][i]['cash'] = len(str(i))
         for key in params.keys():
             if key != 'file' and key != 'phase' and key != 'sep' and key != 'check_phase':
                 if not self.phases[temp_phase]['data'].get(key):
                     self.phases[temp_phase]['data'][key] = {}
                 self.phases[temp_phase]['data'][key]['var'] = params[key]
-                self.phases[temp_phase]['data'][key]['len'] = len(str(key))
+                self.phases[temp_phase]['data'][key]['cash'] = len(str(key))
 
     def default_print(self, **kwargs):
         for key in kwargs.keys():
@@ -68,9 +68,9 @@ class easy_print:
                     val = key
                 check_phase = self.phases[phase].get('check_phase')
                 if check_phase:
-                    temp_len = self.phases[check_phase]['data'][key]['len']
+                    temp_len = self.phases[check_phase]['data'][key]['cash']
                 else:
-                    temp_len = self.phases[phase]['data'][key]['len']
+                    temp_len = self.phases[phase]['data'][key]['cash']
                 if temp_len < 20:
                     temp_print_type = '{:^%d}' % temp_len
                 else:
@@ -118,13 +118,13 @@ class easy_print:
                         temp_result_out = temp_print_type.format(val)
                     else:
                         temp_result_out = val
-                    self.phases[phase]['data'][key]['len'] = len(str(temp_result_out))
+                    self.phases[phase]['data'][key]['cash'] = len(str(temp_result_out))
                 else:
                     check_phase = self.phases[phase].get('check_phase')
                     if check_phase:
-                        temp_print_type = '{:>%d}' % self.phases[check_phase]['data'][key]['len']
+                        temp_print_type = '{:>%d}' % self.phases[check_phase]['data'][key]['cash']
                     else:
-                        temp_print_type = '{:>%d}' % self.phases[phase]['data'][key]['len']
+                        temp_print_type = '{:>%d}' % self.phases[phase]['data'][key]['cash']
                     temp_result_out = temp_print_type.format('')
                 if temp_file != sys.stdout:
                     if self.file_list[temp_file]:

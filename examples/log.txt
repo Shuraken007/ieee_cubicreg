@@ -20,18 +20,62 @@ D:\Development\Python\Anaconda3\lib\site-packages\Pythonwin
 
 
 
-PROJECT_NAME
-	ieee-cubicreg.sublime-project
 ADVISOR_2017_DIR
 	D:\Development\C++\Parallel Studio\Advisor 2017\
-OS
-	Windows_NT
-ND_INC
-	D:\Program Files\Microsoft HPC Pack 2008 SDK\Include\
-PROJECT_PATH
-	D:\Development\Projects\ieee_cubicreg
+VTUNE_AMPLIFIER_XE_2017_DIR
+	D:\Development\C++\Parallel Studio\VTune Amplifier XE 2017\
+TMP
+	D:\SaveHdd\_tmp
+LOGONSERVER
+	\\DARK-FORTRESS
+COMSPEC
+	C:\Windows\system32\cmd.exe
+I_MPI_ROOT
+	D:\Development\C++\Parallel Studio\compilers_and_libraries_2017.4.210\windows\mpi
+USERDOMAIN_ROAMINGPROFILE
+	DARK-FORTRESS
 PROGRAMW6432
 	D:\Program Files
+WINDIR
+	C:\Windows
+INTEL_DEV_REDIST
+	C:\Program Files (x86)\Common Files\Intel\Shared Libraries\
+PROGRAMDATA
+	C:\ProgramData
+COMMONPROGRAMW6432
+	D:\SaveHdd\Common Files
+PROGRAMFILES
+	D:\Program Files
+ONEDRIVE
+	D:\SaveHdd\OneDrive
+COMMONPROGRAMFILES
+	D:\SaveHdd\Common Files
+COMPUTERNAME
+	DARK-FORTRESS
+PROCESSOR_REVISION
+	3c03
+PROCESSOR_IDENTIFIER
+	Intel64 Family 6 Model 60 Stepping 3, GenuineIntel
+ND_INC
+	D:\Program Files\Microsoft HPC Pack 2008 SDK\Include\
+LOCALAPPDATA
+	C:\Users\Dark Lord\AppData\Local
+ICPP_COMPILER17
+	D:\Development\C++\Parallel Studio\compilers_and_libraries_2017.4.210\windows\
+APPDATA
+	C:\Users\Dark Lord\AppData\Roaming
+PROGRAMFILES(X86)
+	D:\Program Files
+TEMP
+	D:\SaveHdd\_temp
+SESSIONNAME
+	Console
+PUBLIC
+	C:\Users\Public
+VS140COMNTOOLS
+	C:\Program Files (x86)\Microsoft Visual Studio 14.0\Common7\Tools\
+PROJECT_BASE_NAME
+	ieee-cubicreg
 PATH
 	D:\Development\Python\Anaconda3\Library\bin
 	D:\Development\Python\Python 2\
@@ -67,52 +111,58 @@ PATH
 	D:\Program Files\MiKTeX 2.9\miktex\bin\x64\
 	D:\Program Files
 	
-PYTHONPATH
+FPS_BROWSER_APP_PROFILE_STRING
+	Internet Explorer
+PROJECT_PATH
 	D:\Development\Projects\ieee_cubicreg
-TMP
-	D:\SaveHdd\_tmp
-PROCESSOR_IDENTIFIER
-	Intel64 Family 6 Model 60 Stepping 3, GenuineIntel
-I_MPI_ROOT
-	D:\Development\C++\Parallel Studio\compilers_and_libraries_2017.4.210\windows\mpi
-TEMP
-	D:\SaveHdd\_temp
-INTELGTDEBUGGERROOT
-	D:\Development\C++\Parallel Studio\debugger_2017\gdb\intel64_igfx\
-COMPUTERNAME
-	DARK-FORTRESS
-USERNAME
-	Dark Lord
-PROJECT_BASE_NAME
-	ieee-cubicreg
-WINDIR
-	C:\Windows
-HOMEDRIVE
-	C:
-ALLUSERSPROFILE
-	C:\ProgramData
+MIC_LD_LIBRARY_PATH
+	C:\Program Files (x86)\Common Files\Intel\Shared Libraries\compiler\lib\intel64_win_mic
+FPS_BROWSER_USER_PROFILE_STRING
+	Default
 CCP_LIB32
 	D:\Program Files\Microsoft HPC Pack 2008 SDK\Lib\i386\
-INTEL_DEV_REDIST
-	C:\Program Files (x86)\Common Files\Intel\Shared Libraries\
-COMMONPROGRAMW6432
-	D:\SaveHdd\Common Files
-PROJECT
-	D:\Development\Projects\ieee_cubicreg\ieee-cubicreg.sublime-project
-PROGRAMFILES(X86)
-	D:\Program Files
-PUBLIC
-	C:\Users\Public
-SESSIONNAME
-	Console
-NUMBER_OF_PROCESSORS
-	4
+PSMODULEPATH
+	D:\Program Files\WindowsPowerShell\Modules
+	C:\Windows\system32\WindowsPowerShell\v1.0\Modules
+SYSTEMDRIVE
+	C:
+PYTHONPATH
+	D:\Development\Projects\ieee_cubicreg
+INSPECTOR_2017_DIR
+	D:\Development\C++\Parallel Studio\Inspector 2017\
 CCP_SDK
 	D:\Program Files\Microsoft HPC Pack 2008 SDK\
-PACKAGES
-	C:\Users\Dark Lord\AppData\Roaming\Sublime Text 3\Packages
+INTELGTDEBUGGERROOT
+	D:\Development\C++\Parallel Studio\debugger_2017\gdb\intel64_igfx\
+COMMONPROGRAMFILES(X86)
+	D:\SaveHdd\Common Files
+ALLUSERSPROFILE
+	C:\ProgramData
 IFORT_COMPILER17
 	D:\Development\C++\Parallel Studio\compilers_and_libraries_2017.4.210\windows\
+NUMBER_OF_PROCESSORS
+	4
+USERNAME
+	Dark Lord
+INTEL_LICENSE_FILE
+	C:\Program Files (x86)\Common Files\\Intel\Licenses
+	C:\Program Files (x86)\Common Files\Intel\Licenses
+HOMEPATH
+	\Users\Dark Lord
+PROJECT
+	D:\Development\Projects\ieee_cubicreg\ieee-cubicreg.sublime-project
+CCP_LIB64
+	D:\Program Files\Microsoft HPC Pack 2008 SDK\Lib\amd64\
+PROCESSOR_ARCHITECTURE
+	AMD64
+PROCESSOR_LEVEL
+	6
+PROJECT_NAME
+	ieee-cubicreg.sublime-project
+CCP_INC
+	D:\Program Files\Microsoft HPC Pack 2008 SDK\Include\
+OS
+	Windows_NT
 PATHEXT
 	.COM
 	.EXE
@@ -126,59 +176,13 @@ PATHEXT
 	.WSH
 	.MSC
 	.PYW
-PROCESSOR_ARCHITECTURE
-	AMD64
-PROGRAMDATA
-	C:\ProgramData
-LOGONSERVER
-	\\DARK-FORTRESS
-USERDOMAIN_ROAMINGPROFILE
-	DARK-FORTRESS
-PROCESSOR_REVISION
-	3c03
-ICPP_COMPILER17
-	D:\Development\C++\Parallel Studio\compilers_and_libraries_2017.4.210\windows\
-MIC_LD_LIBRARY_PATH
-	C:\Program Files (x86)\Common Files\Intel\Shared Libraries\compiler\lib\intel64_win_mic
-VTUNE_AMPLIFIER_XE_2017_DIR
-	D:\Development\C++\Parallel Studio\VTune Amplifier XE 2017\
-COMMONPROGRAMFILES
-	D:\SaveHdd\Common Files
-COMSPEC
-	C:\Windows\system32\cmd.exe
-LOCALAPPDATA
-	C:\Users\Dark Lord\AppData\Local
-PROGRAMFILES
-	D:\Program Files
-USERDOMAIN
-	DARK-FORTRESS
-PSMODULEPATH
-	D:\Program Files\WindowsPowerShell\Modules
-	C:\Windows\system32\WindowsPowerShell\v1.0\Modules
-COMMONPROGRAMFILES(X86)
-	D:\SaveHdd\Common Files
-HOMEPATH
-	\Users\Dark Lord
-USERPROFILE
-	C:\Users\Dark Lord
-INSPECTOR_2017_DIR
-	D:\Development\C++\Parallel Studio\Inspector 2017\
-VS140COMNTOOLS
-	C:\Program Files (x86)\Microsoft Visual Studio 14.0\Common7\Tools\
-INTEL_LICENSE_FILE
-	C:\Program Files (x86)\Common Files\\Intel\Licenses
-	C:\Program Files (x86)\Common Files\Intel\Licenses
-PROCESSOR_LEVEL
-	6
-APPDATA
-	C:\Users\Dark Lord\AppData\Roaming
-CCP_LIB64
-	D:\Program Files\Microsoft HPC Pack 2008 SDK\Lib\amd64\
-CCP_INC
-	D:\Program Files\Microsoft HPC Pack 2008 SDK\Include\
 SYSTEMROOT
 	C:\Windows
-ONEDRIVE
-	D:\SaveHdd\OneDrive
-SYSTEMDRIVE
+HOMEDRIVE
 	C:
+USERDOMAIN
+	DARK-FORTRESS
+USERPROFILE
+	C:\Users\Dark Lord
+PACKAGES
+	C:\Users\Dark Lord\AppData\Roaming\Sublime Text 3\Packages
